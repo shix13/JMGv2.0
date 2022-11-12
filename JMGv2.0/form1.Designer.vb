@@ -23,34 +23,24 @@ Partial Class form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Button1.BackColor = System.Drawing.SystemColors.GrayText
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(245, 349)
+        Me.Button1.Location = New System.Drawing.Point(245, 365)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(113, 47)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Log In"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources._6879295
-        Me.PictureBox1.Location = New System.Drawing.Point(229, 32)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(155, 153)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'TextBox1
         '
@@ -71,7 +61,7 @@ Partial Class form1
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(276, 440)
+        Me.LinkLabel1.Location = New System.Drawing.Point(276, 472)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(61, 20)
         Me.LinkLabel1.TabIndex = 4
@@ -81,35 +71,47 @@ Partial Class form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(229, 420)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(229, 449)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(151, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Create New Account?"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.JMGv2._0.My.Resources.Resources.giphy__1_
+        Me.PictureBox2.Location = New System.Drawing.Point(37, 59)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(524, 410)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox2.TabIndex = 6
+        Me.PictureBox2.TabStop = False
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.ClientSize = New System.Drawing.Size(601, 538)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Name = "form1"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
