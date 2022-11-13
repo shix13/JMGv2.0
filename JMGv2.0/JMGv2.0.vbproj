@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>JMGv2._0</RootNamespace>
-    <StartupObject>JMGv2._0.Form2</StartupObject>
+    <StartupObject>JMGv2._0.form1</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
