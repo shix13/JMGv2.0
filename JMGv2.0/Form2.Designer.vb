@@ -35,9 +35,10 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources.giphy_s1
-        Me.PictureBox1.Location = New System.Drawing.Point(-63, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(-55, 9)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(631, 475)
+        Me.PictureBox1.Size = New System.Drawing.Size(552, 356)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -46,35 +47,38 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Cascadia Code", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(29, 64)
+        Me.Label1.Location = New System.Drawing.Point(25, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 27)
+        Me.Label1.Size = New System.Drawing.Size(127, 21)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Username: Jay"
         '
         'BTN1
         '
-        Me.BTN1.Location = New System.Drawing.Point(574, 82)
+        Me.BTN1.Location = New System.Drawing.Point(502, 62)
+        Me.BTN1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BTN1.Name = "BTN1"
-        Me.BTN1.Size = New System.Drawing.Size(160, 58)
+        Me.BTN1.Size = New System.Drawing.Size(140, 44)
         Me.BTN1.TabIndex = 2
-        Me.BTN1.Text = "ORDER"
+        Me.BTN1.Text = "TRANSACTION"
         Me.BTN1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(574, 187)
+        Me.Button2.Location = New System.Drawing.Point(502, 140)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 58)
+        Me.Button2.Size = New System.Drawing.Size(140, 44)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "MAINTENANCE"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(574, 286)
+        Me.Button3.Location = New System.Drawing.Point(502, 214)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(160, 58)
+        Me.Button3.Size = New System.Drawing.Size(140, 44)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "PURCHASES"
         Me.Button3.UseVisualStyleBackColor = True
@@ -82,25 +86,30 @@ Partial Class Form2
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.JMGv2._0.My.Resources.Resources.profile_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(29, 23)
+        Me.PictureBox2.Location = New System.Drawing.Point(25, 17)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 38)
+        Me.PictureBox2.Size = New System.Drawing.Size(39, 28)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.BackColor = System.Drawing.SystemColors.ControlLight
         Me.ClientSize = New System.Drawing.Size(800, 450)
+
+>>>>>>> a246a6b8d06a26954fe71df9661e0678f54907fb
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.BTN1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form2"
         Me.Text = "Form2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
