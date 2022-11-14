@@ -30,7 +30,11 @@ Partial Class form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
+        Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -87,7 +91,7 @@ Partial Class form1
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.JMGv2._0.My.Resources.Resources.Login_Small
-        Me.PictureBox2.Location = New System.Drawing.Point(-5, -6)
+        Me.PictureBox2.Location = New System.Drawing.Point(-6, -6)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(796, 571)
@@ -101,12 +105,37 @@ Partial Class form1
         Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
+        'ImageList2
+        '
+        Me.ImageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList2.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
+        '
+        'ImageList3
+        '
+        Me.ImageList3.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList3.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList3.TransparentColor = System.Drawing.Color.Transparent
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Yellow
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources.logo_small_2
+        Me.PictureBox1.Location = New System.Drawing.Point(347, 110)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(95, 94)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TextBox2)
@@ -117,6 +146,7 @@ Partial Class form1
         Me.Name = "form1"
         Me.Text = "Form1"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,4 +159,7 @@ Partial Class form1
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents ImageList2 As ImageList
+    Friend WithEvents ImageList3 As ImageList
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
