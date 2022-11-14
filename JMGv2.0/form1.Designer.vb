@@ -119,7 +119,7 @@ Partial Class form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Yellow
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources.logo_small_2
         Me.PictureBox1.Location = New System.Drawing.Point(347, 110)
