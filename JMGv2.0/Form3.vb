@@ -5,9 +5,6 @@
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -19,15 +16,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If sidebar = "Open" Then
-            leftSideBar.Width = 25
-            If leftSideBar >= 250 Then
+            leftSideBar.Width = 40
+            If leftSideBar.Width >= 214 Then
                 sidebar = "Close"
                 Timer1.Stop()
-
             End If
         Else
-            leftSideBar -= 25
-            If leftSideBar.Width <= 50 Then
+            leftSideBar.Width = 40
+            If leftSideBar.Width = 50 Then
                 sidebar = "Open"
                 Timer1.Stop()
             End If

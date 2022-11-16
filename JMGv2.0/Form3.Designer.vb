@@ -34,6 +34,7 @@ Partial Class Form3
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuBar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.exitIcon = New System.Windows.Forms.PictureBox()
@@ -42,6 +43,7 @@ Partial Class Form3
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,7 +61,7 @@ Partial Class Form3
         Me.leftSideBar.Controls.Add(Me.Button3)
         Me.leftSideBar.Controls.Add(Me.Button2)
         Me.leftSideBar.Controls.Add(Me.Button1)
-        Me.leftSideBar.Controls.Add(Me.MenuBar)
+        Me.leftSideBar.Controls.Add(Me.Panel1)
         Me.leftSideBar.Location = New System.Drawing.Point(0, 0)
         Me.leftSideBar.Name = "leftSideBar"
         Me.leftSideBar.Size = New System.Drawing.Size(214, 661)
@@ -198,16 +200,26 @@ Partial Class Form3
         Me.Button1.Text = "          ORDER"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.MenuBar)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(214, 42)
+        Me.Panel1.TabIndex = 16
+        '
         'MenuBar
         '
         Me.MenuBar.BackColor = System.Drawing.Color.Black
         Me.MenuBar.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.clipart365828
         Me.MenuBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MenuBar.Dock = System.Windows.Forms.DockStyle.Right
         Me.MenuBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MenuBar.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.MenuBar.Location = New System.Drawing.Point(177, 4)
+        Me.MenuBar.Location = New System.Drawing.Point(174, 0)
         Me.MenuBar.Name = "MenuBar"
-        Me.MenuBar.Size = New System.Drawing.Size(32, 31)
+        Me.MenuBar.Size = New System.Drawing.Size(40, 42)
         Me.MenuBar.TabIndex = 13
         Me.MenuBar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.MenuBar.UseVisualStyleBackColor = False
@@ -216,15 +228,15 @@ Partial Class Form3
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.Controls.Add(Me.exitIcon)
-        Me.Panel2.Location = New System.Drawing.Point(212, 0)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(948, 58)
+        Me.Panel2.Size = New System.Drawing.Size(1160, 58)
         Me.Panel2.TabIndex = 1
         '
         'exitIcon
         '
         Me.exitIcon.Image = Global.JMGv2._0.My.Resources.Resources.Red_wrong_mark_icon_vector_PNG
-        Me.exitIcon.Location = New System.Drawing.Point(721, 3)
+        Me.exitIcon.Location = New System.Drawing.Point(934, 3)
         Me.exitIcon.Name = "exitIcon"
         Me.exitIcon.Size = New System.Drawing.Size(48, 42)
         Me.exitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -241,15 +253,15 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
         Me.ClientSize = New System.Drawing.Size(984, 661)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.leftSideBar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Controls.Add(Me.Panel2)
         Me.Name = "Form3"
         Me.Text = "Form3"
         Me.leftSideBar.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -271,4 +283,5 @@ Partial Class Form3
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Panel1 As Panel
 End Class
