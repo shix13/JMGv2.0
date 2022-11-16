@@ -23,81 +23,83 @@ Partial Class form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.LoginBtn = New System.Windows.Forms.Button()
+        Me.AccID = New System.Windows.Forms.TextBox()
+        Me.AccPass = New System.Windows.Forms.TextBox()
+        Me.LinkSignUp = New System.Windows.Forms.LinkLabel()
+        Me.LabelNewAcc = New System.Windows.Forms.Label()
+        Me.Background = New System.Windows.Forms.PictureBox()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         Me.ImageList3 = New System.Windows.Forms.ImageList(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Logo = New System.Windows.Forms.PictureBox()
+        Me.exitIcon = New System.Windows.Forms.PictureBox()
+        CType(Me.Background, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'LoginBtn
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.GrayText
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(343, 317)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 35)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Log In"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.LoginBtn.BackColor = System.Drawing.SystemColors.GrayText
+        Me.LoginBtn.Font = New System.Drawing.Font("REVOLUTION", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LoginBtn.Location = New System.Drawing.Point(343, 317)
+        Me.LoginBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LoginBtn.Name = "LoginBtn"
+        Me.LoginBtn.Size = New System.Drawing.Size(99, 35)
+        Me.LoginBtn.TabIndex = 0
+        Me.LoginBtn.Text = "Log In"
+        Me.LoginBtn.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'AccID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(281, 218)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Account ID"
-        Me.TextBox1.Size = New System.Drawing.Size(226, 23)
-        Me.TextBox1.TabIndex = 2
+        Me.AccID.Location = New System.Drawing.Point(281, 218)
+        Me.AccID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.AccID.Name = "AccID"
+        Me.AccID.PlaceholderText = "Account ID"
+        Me.AccID.Size = New System.Drawing.Size(226, 23)
+        Me.AccID.TabIndex = 2
         '
-        'TextBox2
+        'AccPass
         '
-        Me.TextBox2.Location = New System.Drawing.Point(281, 273)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Password"
-        Me.TextBox2.Size = New System.Drawing.Size(226, 23)
-        Me.TextBox2.TabIndex = 3
+        Me.AccPass.Location = New System.Drawing.Point(281, 273)
+        Me.AccPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.AccPass.Name = "AccPass"
+        Me.AccPass.PlaceholderText = "Password"
+        Me.AccPass.Size = New System.Drawing.Size(226, 23)
+        Me.AccPass.TabIndex = 3
         '
-        'LinkLabel1
+        'LinkSignUp
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel1.Location = New System.Drawing.Point(367, 402)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(48, 15)
-        Me.LinkLabel1.TabIndex = 4
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Sign Up"
+        Me.LinkSignUp.AutoSize = True
+        Me.LinkSignUp.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkSignUp.Location = New System.Drawing.Point(367, 412)
+        Me.LinkSignUp.Name = "LinkSignUp"
+        Me.LinkSignUp.Size = New System.Drawing.Size(48, 15)
+        Me.LinkSignUp.TabIndex = 4
+        Me.LinkSignUp.TabStop = True
+        Me.LinkSignUp.Text = "Sign Up"
         '
-        'Label1
+        'LabelNewAcc
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(330, 367)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 15)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Create New Account?"
+        Me.LabelNewAcc.AutoSize = True
+        Me.LabelNewAcc.ForeColor = System.Drawing.Color.White
+        Me.LabelNewAcc.Location = New System.Drawing.Point(331, 385)
+        Me.LabelNewAcc.Name = "LabelNewAcc"
+        Me.LabelNewAcc.Size = New System.Drawing.Size(121, 15)
+        Me.LabelNewAcc.TabIndex = 5
+        Me.LabelNewAcc.Text = "Create New Account?"
         '
-        'PictureBox2
+        'Background
         '
-        Me.PictureBox2.Image = Global.JMGv2._0.My.Resources.Resources.Login_Small
-        Me.PictureBox2.Location = New System.Drawing.Point(-6, -6)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(796, 571)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox2.TabIndex = 6
-        Me.PictureBox2.TabStop = False
+        Me.Background.Image = Global.JMGv2._0.My.Resources.Resources.Login_Small
+        Me.Background.Location = New System.Drawing.Point(-6, -6)
+        Me.Background.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.Background.Name = "Background"
+        Me.Background.Size = New System.Drawing.Size(796, 571)
+        Me.Background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Background.TabIndex = 6
+        Me.Background.TabStop = False
         '
         'ImageList1
         '
@@ -117,17 +119,27 @@ Partial Class form1
         Me.ImageList3.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList3.TransparentColor = System.Drawing.Color.Transparent
         '
-        'PictureBox1
+        'Logo
         '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources.logo_small_2
-        Me.PictureBox1.Location = New System.Drawing.Point(347, 110)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(95, 94)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.Logo.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Logo.Image = Global.JMGv2._0.My.Resources.Resources.logo_small_2
+        Me.Logo.Location = New System.Drawing.Point(347, 110)
+        Me.Logo.Name = "Logo"
+        Me.Logo.Size = New System.Drawing.Size(95, 94)
+        Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Logo.TabIndex = 7
+        Me.Logo.TabStop = False
+        '
+        'exitIcon
+        '
+        Me.exitIcon.Image = Global.JMGv2._0.My.Resources.Resources.Red_wrong_mark_icon_vector_PNG
+        Me.exitIcon.Location = New System.Drawing.Point(732, 6)
+        Me.exitIcon.Name = "exitIcon"
+        Me.exitIcon.Size = New System.Drawing.Size(48, 42)
+        Me.exitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.exitIcon.TabIndex = 8
+        Me.exitIcon.TabStop = False
         '
         'form1
         '
@@ -135,31 +147,36 @@ Partial Class form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.ClientSize = New System.Drawing.Size(784, 561)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.exitIcon)
+        Me.Controls.Add(Me.Logo)
+        Me.Controls.Add(Me.LabelNewAcc)
+        Me.Controls.Add(Me.LinkSignUp)
+        Me.Controls.Add(Me.AccPass)
+        Me.Controls.Add(Me.AccID)
+        Me.Controls.Add(Me.LoginBtn)
+        Me.Controls.Add(Me.Background)
+        Me.ForeColor = System.Drawing.Color.White
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "form1"
         Me.Text = "Form1"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Background, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents LoginBtn As Button
+    Friend WithEvents AccID As TextBox
+    Friend WithEvents AccPass As TextBox
+    Friend WithEvents LinkSignUp As LinkLabel
+    Friend WithEvents LabelNewAcc As Label
+    Friend WithEvents Background As PictureBox
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents ImageList2 As ImageList
     Friend WithEvents ImageList3 As ImageList
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Logo As PictureBox
+    Friend WithEvents exitIcon As PictureBox
 End Class

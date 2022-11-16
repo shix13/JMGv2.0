@@ -22,76 +22,28 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.BTN1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.exitIcon = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.JMGv2._0.My.Resources.Resources.giphy_s1
-        Me.PictureBox1.Location = New System.Drawing.Point(-3, 11)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(552, 356)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Cascadia Code", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(25, 48)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(127, 21)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Username: Jay"
-        '
-        'BTN1
-        '
-        Me.BTN1.Location = New System.Drawing.Point(502, 62)
-        Me.BTN1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.BTN1.Name = "BTN1"
-        Me.BTN1.Size = New System.Drawing.Size(140, 44)
-        Me.BTN1.TabIndex = 2
-        Me.BTN1.Text = "ORDER"
-        Me.BTN1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(502, 140)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(140, 44)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "MAINTENANCE"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(502, 214)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(140, 44)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "PURCHASES"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.exitIcon.Image = Global.JMGv2._0.My.Resources.Resources.Login_Small
+        Me.exitIcon.Location = New System.Drawing.Point(-1, -3)
+        Me.exitIcon.Name = "PictureBox1"
+        Me.exitIcon.Size = New System.Drawing.Size(790, 567)
+        Me.exitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.exitIcon.TabIndex = 0
+        Me.exitIcon.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.JMGv2._0.My.Resources.Resources.profile_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(25, 17)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox2.Location = New System.Drawing.Point(65, 42)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(39, 28)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.Size = New System.Drawing.Size(521, 444)
+        Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'Form2
@@ -99,27 +51,31 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GrayText
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.BTN1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.exitIcon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form2"
         Me.Text = "Form2"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents BTN1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents exitIcon As PictureBox
+    Friend WithEvents CreateLabel As Label
+    Friend WithEvents Lname As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Fname As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Mname As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents position As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents password As TextBox
+    Friend WithEvents SignUpBtn As Button
+    Friend WithEvents PictureBox3 As PictureBox
 End Class
