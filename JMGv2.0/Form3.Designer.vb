@@ -292,7 +292,7 @@ Partial Class Form3
         Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.bg
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(998, 106)
         Me.Panel2.TabIndex = 1

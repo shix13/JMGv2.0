@@ -52,12 +52,15 @@
 
         End If
     End Sub
-
     Private Sub Form3_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 End Class
