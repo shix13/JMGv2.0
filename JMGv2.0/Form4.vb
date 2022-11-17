@@ -1,4 +1,4 @@
-﻿Public Class Form3
+﻿Public Class Form4
     Dim sidebar As String = "Close"
 
     Sub clear()
@@ -60,11 +60,25 @@
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub HomeBtn_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub TableNo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TableNo.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label_Click(sender As Object, e As EventArgs) Handles Label.Click
+
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MenuItem.SelectedIndexChanged
+
+    End Sub
+
+
 End Class

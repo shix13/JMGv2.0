@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Form4
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.leftSideBar = New System.Windows.Forms.Panel()
@@ -39,17 +39,28 @@ Partial Class Form3
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuBar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MenuItem = New System.Windows.Forms.ListBox()
+        Me.ordCancel = New System.Windows.Forms.Button()
+        Me.vndRemove = New System.Windows.Forms.Button()
+        Me.ordSave = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.OrderTotal = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.OrderNo = New System.Windows.Forms.TextBox()
+        Me.Label = New System.Windows.Forms.Label()
+        Me.TableNo = New System.Windows.Forms.ComboBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.leftSideBar.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -77,7 +88,7 @@ Partial Class Form3
         '
         Me.logoutBtn.BackColor = System.Drawing.Color.White
         Me.logoutBtn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.logoutBtn.Location = New System.Drawing.Point(72, 560)
+        Me.logoutBtn.Location = New System.Drawing.Point(68, 560)
         Me.logoutBtn.Name = "logoutBtn"
         Me.logoutBtn.Size = New System.Drawing.Size(88, 37)
         Me.logoutBtn.TabIndex = 19
@@ -100,7 +111,7 @@ Partial Class Form3
         '
         'Button7
         '
-        Me.Button7.BackColor = System.Drawing.Color.Black
+        Me.Button7.BackColor = System.Drawing.Color.DarkGray
         Me.Button7.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.pinpng_com_checklist_icon_png_2009984
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -204,7 +215,7 @@ Partial Class Form3
         '
         'OrderBtn
         '
-        Me.OrderBtn.BackColor = System.Drawing.Color.Black
+        Me.OrderBtn.BackColor = System.Drawing.Color.DarkGray
         Me.OrderBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.OrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.OrderBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
@@ -258,11 +269,23 @@ Partial Class Form3
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.bg
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(998, 90)
         Me.Panel2.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Heading Now Trial 54", 30.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(373, 12)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(243, 53)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "CREATE ORDER"
         '
         'Timer1
         '
@@ -271,36 +294,135 @@ Partial Class Form3
         'Panel3
         '
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.Controls.Add(Me.PictureBox1)
+        Me.Panel3.Controls.Add(Me.ListBox2)
+        Me.Panel3.Controls.Add(Me.ListBox1)
+        Me.Panel3.Controls.Add(Me.MenuItem)
+        Me.Panel3.Controls.Add(Me.ordCancel)
+        Me.Panel3.Controls.Add(Me.vndRemove)
+        Me.Panel3.Controls.Add(Me.ordSave)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.OrderTotal)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.OrderNo)
+        Me.Panel3.Controls.Add(Me.Label)
+        Me.Panel3.Controls.Add(Me.TableNo)
         Me.Panel3.Location = New System.Drawing.Point(47, 90)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(938, 571)
         Me.Panel3.TabIndex = 2
         '
-        'Label2
+        'MenuItem
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Heading Now Trial 54", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(272, 36)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(354, 63)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "WELCOME, ADMIN!"
+        Me.MenuItem.FormattingEnabled = True
+        Me.MenuItem.ItemHeight = 15
+        Me.MenuItem.Location = New System.Drawing.Point(21, 262)
+        Me.MenuItem.Name = "MenuItem"
+        Me.MenuItem.Size = New System.Drawing.Size(337, 289)
+        Me.MenuItem.TabIndex = 11
         '
-        'PictureBox1
+        'ordCancel
         '
-        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(274, 102)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(350, 350)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.ordCancel.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ordCancel.Location = New System.Drawing.Point(241, 201)
+        Me.ordCancel.Name = "ordCancel"
+        Me.ordCancel.Size = New System.Drawing.Size(75, 36)
+        Me.ordCancel.TabIndex = 10
+        Me.ordCancel.Text = "CANCEL"
+        Me.ordCancel.UseVisualStyleBackColor = True
         '
-        'Form3
+        'vndRemove
+        '
+        Me.vndRemove.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.vndRemove.Location = New System.Drawing.Point(137, 201)
+        Me.vndRemove.Name = "vndRemove"
+        Me.vndRemove.Size = New System.Drawing.Size(92, 36)
+        Me.vndRemove.TabIndex = 9
+        Me.vndRemove.Text = "REMOVE"
+        Me.vndRemove.UseVisualStyleBackColor = True
+        '
+        'ordSave
+        '
+        Me.ordSave.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ordSave.Location = New System.Drawing.Point(50, 201)
+        Me.ordSave.Name = "ordSave"
+        Me.ordSave.Size = New System.Drawing.Size(75, 36)
+        Me.ordSave.TabIndex = 8
+        Me.ordSave.Text = "SAVE"
+        Me.ordSave.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(50, 135)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 20)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "TOTAL"
+        '
+        'OrderTotal
+        '
+        Me.OrderTotal.Location = New System.Drawing.Point(50, 159)
+        Me.OrderTotal.Name = "OrderTotal"
+        Me.OrderTotal.Size = New System.Drawing.Size(266, 23)
+        Me.OrderTotal.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(50, 74)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(124, 20)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "ORDER NUMBER"
+        '
+        'OrderNo
+        '
+        Me.OrderNo.Location = New System.Drawing.Point(50, 98)
+        Me.OrderNo.Name = "OrderNo"
+        Me.OrderNo.Size = New System.Drawing.Size(266, 23)
+        Me.OrderNo.TabIndex = 4
+        '
+        'Label
+        '
+        Me.Label.AutoSize = True
+        Me.Label.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label.Location = New System.Drawing.Point(50, 13)
+        Me.Label.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label.Name = "Label"
+        Me.Label.Size = New System.Drawing.Size(117, 20)
+        Me.Label.TabIndex = 3
+        Me.Label.Text = "TABLE NUMBER"
+        '
+        'TableNo
+        '
+        Me.TableNo.FormattingEnabled = True
+        Me.TableNo.Location = New System.Drawing.Point(50, 38)
+        Me.TableNo.Name = "TableNo"
+        Me.TableNo.Size = New System.Drawing.Size(266, 23)
+        Me.TableNo.TabIndex = 2
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 15
+        Me.ListBox1.Location = New System.Drawing.Point(416, 47)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(497, 229)
+        Me.ListBox1.TabIndex = 12
+        '
+        'ListBox2
+        '
+        Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 15
+        Me.ListBox2.Location = New System.Drawing.Point(416, 322)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(497, 229)
+        Me.ListBox2.TabIndex = 13
+        '
+        'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -311,7 +433,7 @@ Partial Class Form3
         Me.Controls.Add(Me.leftSideBar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
-        Me.Name = "Form3"
+        Me.Name = "Form4"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.leftSideBar.ResumeLayout(False)
@@ -320,9 +442,10 @@ Partial Class Form3
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -345,6 +468,17 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents logoutBtn As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents TableNo As ComboBox
+    Friend WithEvents OrderNo As TextBox
+    Friend WithEvents Label As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents OrderTotal As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ordCancel As Button
+    Friend WithEvents vndRemove As Button
+    Friend WithEvents ordSave As Button
+    Friend WithEvents MenuItem As ListBox
+    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents ListBox1 As ListBox
 End Class
