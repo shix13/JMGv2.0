@@ -37,15 +37,12 @@ Partial Class Form3
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MenuBar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.exitIcon = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.leftSideBar.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -227,21 +224,10 @@ Partial Class Form3
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
-        Me.Panel2.Controls.Add(Me.exitIcon)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1160, 58)
+        Me.Panel2.Size = New System.Drawing.Size(988, 58)
         Me.Panel2.TabIndex = 1
-        '
-        'exitIcon
-        '
-        Me.exitIcon.Image = Global.JMGv2._0.My.Resources.Resources.Red_wrong_mark_icon_vector_PNG
-        Me.exitIcon.Location = New System.Drawing.Point(934, 3)
-        Me.exitIcon.Name = "exitIcon"
-        Me.exitIcon.Size = New System.Drawing.Size(48, 42)
-        Me.exitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.exitIcon.TabIndex = 9
-        Me.exitIcon.TabStop = False
         '
         'Timer1
         '
@@ -262,15 +248,12 @@ Partial Class Form3
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.exitIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents leftSideBar As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents exitIcon As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Button5 As Button

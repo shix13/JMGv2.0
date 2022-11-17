@@ -11,7 +11,7 @@
 
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles Background.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -20,6 +20,10 @@
     End Sub
 
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles Logo.Click
+
+    End Sub
+
+    Private Sub exitIcon_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
