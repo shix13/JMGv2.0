@@ -24,6 +24,8 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.leftSideBar = New System.Windows.Forms.Panel()
+        Me.lblWelcome = New System.Windows.Forms.Label()
+        Me.dtpPanelDate = New System.Windows.Forms.DateTimePicker()
         Me.logoutBtn = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -55,6 +57,8 @@ Partial Class Form3
         'leftSideBar
         '
         Me.leftSideBar.BackColor = System.Drawing.Color.Black
+        Me.leftSideBar.Controls.Add(Me.lblWelcome)
+        Me.leftSideBar.Controls.Add(Me.dtpPanelDate)
         Me.leftSideBar.Controls.Add(Me.logoutBtn)
         Me.leftSideBar.Controls.Add(Me.Button8)
         Me.leftSideBar.Controls.Add(Me.Button7)
@@ -73,11 +77,32 @@ Partial Class Form3
         Me.leftSideBar.Size = New System.Drawing.Size(50, 670)
         Me.leftSideBar.TabIndex = 0
         '
+        'lblWelcome
+        '
+        Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblWelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblWelcome.Location = New System.Drawing.Point(47, 70)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(139, 20)
+        Me.lblWelcome.TabIndex = 23
+        Me.lblWelcome.Text = "WELCOME, ADMIN"
+        '
+        'dtpPanelDate
+        '
+        Me.dtpPanelDate.CalendarMonthBackground = System.Drawing.Color.DarkGray
+        Me.dtpPanelDate.Enabled = False
+        Me.dtpPanelDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpPanelDate.Location = New System.Drawing.Point(67, 104)
+        Me.dtpPanelDate.Name = "dtpPanelDate"
+        Me.dtpPanelDate.Size = New System.Drawing.Size(100, 23)
+        Me.dtpPanelDate.TabIndex = 22
+        '
         'logoutBtn
         '
         Me.logoutBtn.BackColor = System.Drawing.Color.White
         Me.logoutBtn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.logoutBtn.Location = New System.Drawing.Point(72, 560)
+        Me.logoutBtn.Location = New System.Drawing.Point(68, 560)
         Me.logoutBtn.Name = "logoutBtn"
         Me.logoutBtn.Size = New System.Drawing.Size(88, 37)
         Me.logoutBtn.TabIndex = 19
@@ -282,10 +307,10 @@ Partial Class Form3
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Heading Now Trial 54", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.Location = New System.Drawing.Point(272, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(354, 63)
+        Me.Label2.Size = New System.Drawing.Size(481, 55)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "WELCOME, ADMIN!"
         '
@@ -315,6 +340,7 @@ Partial Class Form3
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.leftSideBar.ResumeLayout(False)
+        Me.leftSideBar.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -347,4 +373,6 @@ Partial Class Form3
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents lblWelcome As Label
+    Friend WithEvents dtpPanelDate As DateTimePicker
 End Class

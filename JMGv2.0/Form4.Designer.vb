@@ -24,6 +24,8 @@ Partial Class Form4
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.leftSideBar = New System.Windows.Forms.Panel()
+        Me.lblWelcome = New System.Windows.Forms.Label()
+        Me.dtpPanelDate = New System.Windows.Forms.DateTimePicker()
         Me.logoutBtn = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -36,24 +38,24 @@ Partial Class Form4
         Me.PayBtn = New System.Windows.Forms.Button()
         Me.OrderBtn = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblMenuBar = New System.Windows.Forms.Label()
         Me.MenuBar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblFormCreate = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.MenuItem = New System.Windows.Forms.ListBox()
+        Me.lblSearchV = New System.Windows.Forms.Label()
+        Me.txtSearchV = New System.Windows.Forms.TextBox()
+        Me.dgvMenuItem = New System.Windows.Forms.DataGridView()
         Me.ordCancel = New System.Windows.Forms.Button()
         Me.vndRemove = New System.Windows.Forms.Button()
         Me.ordSave = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.OrderTotal = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.OrderNo = New System.Windows.Forms.TextBox()
-        Me.Label = New System.Windows.Forms.Label()
-        Me.TableNo = New System.Windows.Forms.ComboBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.lblOrderTotal = New System.Windows.Forms.Label()
+        Me.txtOrderTotal = New System.Windows.Forms.TextBox()
+        Me.lblOrderNo = New System.Windows.Forms.Label()
+        Me.txtOrderNo = New System.Windows.Forms.TextBox()
+        Me.lblTableNo = New System.Windows.Forms.Label()
+        Me.cmbTableNo = New System.Windows.Forms.ComboBox()
         Me.leftSideBar.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,11 +63,14 @@ Partial Class Form4
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.dgvMenuItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
         '
         Me.leftSideBar.BackColor = System.Drawing.Color.Black
+        Me.leftSideBar.Controls.Add(Me.lblWelcome)
+        Me.leftSideBar.Controls.Add(Me.dtpPanelDate)
         Me.leftSideBar.Controls.Add(Me.logoutBtn)
         Me.leftSideBar.Controls.Add(Me.Button8)
         Me.leftSideBar.Controls.Add(Me.Button7)
@@ -83,6 +88,27 @@ Partial Class Form4
         Me.leftSideBar.Name = "leftSideBar"
         Me.leftSideBar.Size = New System.Drawing.Size(50, 670)
         Me.leftSideBar.TabIndex = 0
+        '
+        'lblWelcome
+        '
+        Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblWelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblWelcome.Location = New System.Drawing.Point(47, 70)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(139, 20)
+        Me.lblWelcome.TabIndex = 21
+        Me.lblWelcome.Text = "WELCOME, ADMIN"
+        '
+        'dtpPanelDate
+        '
+        Me.dtpPanelDate.CalendarMonthBackground = System.Drawing.Color.DarkGray
+        Me.dtpPanelDate.Enabled = False
+        Me.dtpPanelDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpPanelDate.Location = New System.Drawing.Point(67, 104)
+        Me.dtpPanelDate.Name = "dtpPanelDate"
+        Me.dtpPanelDate.Size = New System.Drawing.Size(100, 23)
+        Me.dtpPanelDate.TabIndex = 14
         '
         'logoutBtn
         '
@@ -230,7 +256,7 @@ Partial Class Form4
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.lblMenuBar)
         Me.Panel1.Controls.Add(Me.MenuBar)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -238,16 +264,16 @@ Partial Class Form4
         Me.Panel1.Size = New System.Drawing.Size(50, 42)
         Me.Panel1.TabIndex = 16
         '
-        'Label1
+        'lblMenuBar
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(54, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 17)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "MENU BAR"
+        Me.lblMenuBar.AutoSize = True
+        Me.lblMenuBar.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblMenuBar.ForeColor = System.Drawing.Color.White
+        Me.lblMenuBar.Location = New System.Drawing.Point(54, 12)
+        Me.lblMenuBar.Name = "lblMenuBar"
+        Me.lblMenuBar.Size = New System.Drawing.Size(75, 17)
+        Me.lblMenuBar.TabIndex = 14
+        Me.lblMenuBar.Text = "MENU BAR"
         '
         'MenuBar
         '
@@ -269,23 +295,23 @@ Partial Class Form4
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.bg
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.lblFormCreate)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(998, 90)
         Me.Panel2.TabIndex = 1
         '
-        'Label2
+        'lblFormCreate
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Font = New System.Drawing.Font("Heading Now Trial 54", 30.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(373, 12)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(243, 53)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "CREATE ORDER"
+        Me.lblFormCreate.AutoSize = True
+        Me.lblFormCreate.BackColor = System.Drawing.Color.White
+        Me.lblFormCreate.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.lblFormCreate.Location = New System.Drawing.Point(354, 27)
+        Me.lblFormCreate.Name = "lblFormCreate"
+        Me.lblFormCreate.Size = New System.Drawing.Size(351, 46)
+        Me.lblFormCreate.TabIndex = 0
+        Me.lblFormCreate.Text = "CREATE ORDER"
         '
         'Timer1
         '
@@ -294,47 +320,64 @@ Partial Class Form4
         'Panel3
         '
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Controls.Add(Me.ListBox2)
-        Me.Panel3.Controls.Add(Me.ListBox1)
-        Me.Panel3.Controls.Add(Me.MenuItem)
+        Me.Panel3.Controls.Add(Me.lblSearchV)
+        Me.Panel3.Controls.Add(Me.txtSearchV)
+        Me.Panel3.Controls.Add(Me.dgvMenuItem)
         Me.Panel3.Controls.Add(Me.ordCancel)
         Me.Panel3.Controls.Add(Me.vndRemove)
         Me.Panel3.Controls.Add(Me.ordSave)
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.OrderTotal)
-        Me.Panel3.Controls.Add(Me.Label3)
-        Me.Panel3.Controls.Add(Me.OrderNo)
-        Me.Panel3.Controls.Add(Me.Label)
-        Me.Panel3.Controls.Add(Me.TableNo)
+        Me.Panel3.Controls.Add(Me.lblOrderTotal)
+        Me.Panel3.Controls.Add(Me.txtOrderTotal)
+        Me.Panel3.Controls.Add(Me.lblOrderNo)
+        Me.Panel3.Controls.Add(Me.txtOrderNo)
+        Me.Panel3.Controls.Add(Me.lblTableNo)
+        Me.Panel3.Controls.Add(Me.cmbTableNo)
         Me.Panel3.Location = New System.Drawing.Point(47, 90)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(938, 571)
         Me.Panel3.TabIndex = 2
         '
-        'MenuItem
+        'lblSearchV
         '
-        Me.MenuItem.FormattingEnabled = True
-        Me.MenuItem.ItemHeight = 15
-        Me.MenuItem.Location = New System.Drawing.Point(21, 262)
-        Me.MenuItem.Name = "MenuItem"
-        Me.MenuItem.Size = New System.Drawing.Size(337, 289)
-        Me.MenuItem.TabIndex = 11
+        Me.lblSearchV.AutoSize = True
+        Me.lblSearchV.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblSearchV.Location = New System.Drawing.Point(93, 139)
+        Me.lblSearchV.Name = "lblSearchV"
+        Me.lblSearchV.Size = New System.Drawing.Size(115, 20)
+        Me.lblSearchV.TabIndex = 13
+        Me.lblSearchV.Text = "SEARCH VIAND"
+        '
+        'txtSearchV
+        '
+        Me.txtSearchV.Location = New System.Drawing.Point(214, 136)
+        Me.txtSearchV.Name = "txtSearchV"
+        Me.txtSearchV.Size = New System.Drawing.Size(184, 23)
+        Me.txtSearchV.TabIndex = 12
+        '
+        'dgvMenuItem
+        '
+        Me.dgvMenuItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvMenuItem.Location = New System.Drawing.Point(21, 165)
+        Me.dgvMenuItem.Name = "dgvMenuItem"
+        Me.dgvMenuItem.RowTemplate.Height = 25
+        Me.dgvMenuItem.Size = New System.Drawing.Size(377, 373)
+        Me.dgvMenuItem.TabIndex = 11
         '
         'ordCancel
         '
         Me.ordCancel.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ordCancel.Location = New System.Drawing.Point(241, 201)
+        Me.ordCancel.Location = New System.Drawing.Point(720, 347)
         Me.ordCancel.Name = "ordCancel"
         Me.ordCancel.Size = New System.Drawing.Size(75, 36)
         Me.ordCancel.TabIndex = 10
-        Me.ordCancel.Text = "CANCEL"
+        Me.ordCancel.Text = "CLOSE"
         Me.ordCancel.UseVisualStyleBackColor = True
         '
         'vndRemove
         '
         Me.vndRemove.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.vndRemove.Location = New System.Drawing.Point(137, 201)
+        Me.vndRemove.Location = New System.Drawing.Point(622, 347)
         Me.vndRemove.Name = "vndRemove"
         Me.vndRemove.Size = New System.Drawing.Size(92, 36)
         Me.vndRemove.TabIndex = 9
@@ -344,83 +387,65 @@ Partial Class Form4
         'ordSave
         '
         Me.ordSave.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ordSave.Location = New System.Drawing.Point(50, 201)
+        Me.ordSave.Location = New System.Drawing.Point(541, 347)
         Me.ordSave.Name = "ordSave"
         Me.ordSave.Size = New System.Drawing.Size(75, 36)
         Me.ordSave.TabIndex = 8
         Me.ordSave.Text = "SAVE"
         Me.ordSave.UseVisualStyleBackColor = True
         '
-        'Label4
+        'lblOrderTotal
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(50, 135)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 20)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "TOTAL"
+        Me.lblOrderTotal.AutoSize = True
+        Me.lblOrderTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblOrderTotal.Location = New System.Drawing.Point(618, 13)
+        Me.lblOrderTotal.Name = "lblOrderTotal"
+        Me.lblOrderTotal.Size = New System.Drawing.Size(50, 20)
+        Me.lblOrderTotal.TabIndex = 7
+        Me.lblOrderTotal.Text = "TOTAL"
         '
-        'OrderTotal
+        'txtOrderTotal
         '
-        Me.OrderTotal.Location = New System.Drawing.Point(50, 159)
-        Me.OrderTotal.Name = "OrderTotal"
-        Me.OrderTotal.Size = New System.Drawing.Size(266, 23)
-        Me.OrderTotal.TabIndex = 6
+        Me.txtOrderTotal.Location = New System.Drawing.Point(618, 38)
+        Me.txtOrderTotal.Name = "txtOrderTotal"
+        Me.txtOrderTotal.Size = New System.Drawing.Size(266, 23)
+        Me.txtOrderTotal.TabIndex = 6
         '
-        'Label3
+        'lblOrderNo
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(50, 74)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "ORDER NUMBER"
+        Me.lblOrderNo.AutoSize = True
+        Me.lblOrderNo.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblOrderNo.Location = New System.Drawing.Point(332, 13)
+        Me.lblOrderNo.Name = "lblOrderNo"
+        Me.lblOrderNo.Size = New System.Drawing.Size(124, 20)
+        Me.lblOrderNo.TabIndex = 5
+        Me.lblOrderNo.Text = "ORDER NUMBER"
         '
-        'OrderNo
+        'txtOrderNo
         '
-        Me.OrderNo.Location = New System.Drawing.Point(50, 98)
-        Me.OrderNo.Name = "OrderNo"
-        Me.OrderNo.Size = New System.Drawing.Size(266, 23)
-        Me.OrderNo.TabIndex = 4
+        Me.txtOrderNo.Location = New System.Drawing.Point(332, 38)
+        Me.txtOrderNo.Name = "txtOrderNo"
+        Me.txtOrderNo.Size = New System.Drawing.Size(266, 23)
+        Me.txtOrderNo.TabIndex = 4
         '
-        'Label
+        'lblTableNo
         '
-        Me.Label.AutoSize = True
-        Me.Label.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label.Location = New System.Drawing.Point(50, 13)
-        Me.Label.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(117, 20)
-        Me.Label.TabIndex = 3
-        Me.Label.Text = "TABLE NUMBER"
+        Me.lblTableNo.AutoSize = True
+        Me.lblTableNo.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTableNo.Location = New System.Drawing.Point(50, 13)
+        Me.lblTableNo.Margin = New System.Windows.Forms.Padding(0)
+        Me.lblTableNo.Name = "lblTableNo"
+        Me.lblTableNo.Size = New System.Drawing.Size(117, 20)
+        Me.lblTableNo.TabIndex = 3
+        Me.lblTableNo.Text = "TABLE NUMBER"
         '
-        'TableNo
+        'cmbTableNo
         '
-        Me.TableNo.FormattingEnabled = True
-        Me.TableNo.Location = New System.Drawing.Point(50, 38)
-        Me.TableNo.Name = "TableNo"
-        Me.TableNo.Size = New System.Drawing.Size(266, 23)
-        Me.TableNo.TabIndex = 2
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 15
-        Me.ListBox1.Location = New System.Drawing.Point(416, 47)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(497, 229)
-        Me.ListBox1.TabIndex = 12
-        '
-        'ListBox2
-        '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 15
-        Me.ListBox2.Location = New System.Drawing.Point(416, 322)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(497, 229)
-        Me.ListBox2.TabIndex = 13
+        Me.cmbTableNo.FormattingEnabled = True
+        Me.cmbTableNo.Location = New System.Drawing.Point(50, 38)
+        Me.cmbTableNo.Name = "cmbTableNo"
+        Me.cmbTableNo.Size = New System.Drawing.Size(266, 23)
+        Me.cmbTableNo.TabIndex = 2
         '
         'Form4
         '
@@ -437,6 +462,7 @@ Partial Class Form4
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
         Me.leftSideBar.ResumeLayout(False)
+        Me.leftSideBar.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -446,6 +472,7 @@ Partial Class Form4
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.dgvMenuItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -465,20 +492,22 @@ Partial Class Form4
     Friend WithEvents Button7 As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblMenuBar As Label
     Friend WithEvents logoutBtn As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TableNo As ComboBox
-    Friend WithEvents OrderNo As TextBox
-    Friend WithEvents Label As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents OrderTotal As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblFormCreate As Label
+    Friend WithEvents cmbTableNo As ComboBox
+    Friend WithEvents txtOrderNo As TextBox
+    Friend WithEvents lblTableNo As Label
+    Friend WithEvents lblOrderTotal As Label
+    Friend WithEvents txtOrderTotal As TextBox
+    Friend WithEvents lblOrderNo As Label
     Friend WithEvents ordCancel As Button
     Friend WithEvents vndRemove As Button
     Friend WithEvents ordSave As Button
-    Friend WithEvents MenuItem As ListBox
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents dgvMenuItem As DataGridView
+    Friend WithEvents lblSearchV As Label
+    Friend WithEvents txtSearchV As TextBox
+    Friend WithEvents dtpPanelDate As DateTimePicker
+    Friend WithEvents lblWelcome As Label
 End Class

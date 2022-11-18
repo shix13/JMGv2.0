@@ -2,21 +2,23 @@
     Dim sidebar As String = "Close"
 
     Sub clear()
-
-        OrderBtn.Text = ""
-        PayBtn.Text = ""
-        MainBtn.Text = ""
-        AccBtn.Text = ""
-        PurBtn.Text = ""
+        lblWelcome.Visible = False
+        dtpPanelDate.Visible = False
+        OrderBtn.Visible = False
+        PayBtn.Visible = False
+        MainBtn.Visible = False
+        AccBtn.Visible = False
+        PurBtn.Visible = False
     End Sub
 
     Sub setname()
-
-        OrderBtn.Text = "ORDER"
-        PayBtn.Text = "PAYMENT"
-        MainBtn.Text = "MAINTENANCE"
-        AccBtn.Text = "ACCOUNT"
-        PurBtn.Text = "PURCHASE ORDER"
+        lblWelcome.Visible = True
+        dtpPanelDate.Visible = True
+        OrderBtn.Visible = True
+        PayBtn.Visible = True
+        MainBtn.Visible = True
+        AccBtn.Visible = True
+        PurBtn.Visible = True
     End Sub
 
 
@@ -68,17 +70,19 @@
 
     End Sub
 
-    Private Sub TableNo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TableNo.SelectedIndexChanged
+    Private Sub TableNo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbTableNo.SelectedIndexChanged
 
     End Sub
 
-    Private Sub Label_Click(sender As Object, e As EventArgs) Handles Label.Click
+    Private Sub Label_Click(sender As Object, e As EventArgs) Handles lblTableNo.Click
 
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MenuItem.SelectedIndexChanged
+    Private Sub leftSideBar_Paint(sender As Object, e As PaintEventArgs) Handles leftSideBar.Paint
 
     End Sub
 
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lblSearchV.Click
 
+    End Sub
 End Class
