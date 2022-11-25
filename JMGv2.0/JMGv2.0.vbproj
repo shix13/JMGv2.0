@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>JMGv2._0</RootNamespace>
-    <StartupObject>JMGv2._0.Form4</StartupObject>
+    <StartupObject>JMGv2._0.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
@@ -13,6 +13,12 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="IBM.Data.DB2">
+      <HintPath>..\..\..\..\..\..\Program Files\IBM\SQLLIB\BIN\netf20\IBM.Data.DB2.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

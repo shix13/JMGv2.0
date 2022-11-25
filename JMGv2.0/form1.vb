@@ -1,6 +1,17 @@
-﻿Public Class form1
-    Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Imports IBM.Data.DB2
 
+Public Class form1
+    Private Conn As Common.DbConnection
+
+    Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Conn = New DB2Connection("server=localhost;database=oneg;" + "uid=db2admin;password=db2admin;")
+            Conn.Open()
+
+            'AccPass.PasswordChar = "*"
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LabelNewAcc.Click
@@ -24,6 +35,10 @@
     End Sub
 
     Private Sub exitIcon_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub LoginBtn_Click(sender As Object, e As EventArgs) Handles LoginBtn.Click
 
     End Sub
 End Class

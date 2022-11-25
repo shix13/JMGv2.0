@@ -38,40 +38,37 @@ Partial Class form1
         'LoginBtn
         '
         Me.LoginBtn.BackColor = System.Drawing.SystemColors.GrayText
-        Me.LoginBtn.Font = New System.Drawing.Font("Heading Now Trial 54", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LoginBtn.Location = New System.Drawing.Point(345, 349)
-        Me.LoginBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LoginBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LoginBtn.Location = New System.Drawing.Point(394, 465)
         Me.LoginBtn.Name = "LoginBtn"
-        Me.LoginBtn.Size = New System.Drawing.Size(100, 35)
+        Me.LoginBtn.Size = New System.Drawing.Size(114, 47)
         Me.LoginBtn.TabIndex = 0
         Me.LoginBtn.Text = "Login"
         Me.LoginBtn.UseVisualStyleBackColor = False
         '
         'AccID
         '
-        Me.AccID.Location = New System.Drawing.Point(281, 259)
-        Me.AccID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.AccID.Location = New System.Drawing.Point(321, 345)
         Me.AccID.Name = "AccID"
         Me.AccID.PlaceholderText = "Account ID"
-        Me.AccID.Size = New System.Drawing.Size(226, 23)
+        Me.AccID.Size = New System.Drawing.Size(258, 27)
         Me.AccID.TabIndex = 2
         '
         'AccPass
         '
-        Me.AccPass.Location = New System.Drawing.Point(281, 304)
-        Me.AccPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.AccPass.Location = New System.Drawing.Point(321, 405)
         Me.AccPass.Name = "AccPass"
         Me.AccPass.PlaceholderText = "Password"
-        Me.AccPass.Size = New System.Drawing.Size(226, 23)
+        Me.AccPass.Size = New System.Drawing.Size(258, 27)
         Me.AccPass.TabIndex = 3
         '
         'LinkSignUp
         '
         Me.LinkSignUp.AutoSize = True
         Me.LinkSignUp.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkSignUp.Location = New System.Drawing.Point(371, 445)
+        Me.LinkSignUp.Location = New System.Drawing.Point(424, 593)
         Me.LinkSignUp.Name = "LinkSignUp"
-        Me.LinkSignUp.Size = New System.Drawing.Size(48, 15)
+        Me.LinkSignUp.Size = New System.Drawing.Size(61, 20)
         Me.LinkSignUp.TabIndex = 4
         Me.LinkSignUp.TabStop = True
         Me.LinkSignUp.Text = "Sign Up"
@@ -80,9 +77,9 @@ Partial Class form1
         '
         Me.LabelNewAcc.AutoSize = True
         Me.LabelNewAcc.ForeColor = System.Drawing.Color.White
-        Me.LabelNewAcc.Location = New System.Drawing.Point(333, 418)
+        Me.LabelNewAcc.Location = New System.Drawing.Point(381, 557)
         Me.LabelNewAcc.Name = "LabelNewAcc"
-        Me.LabelNewAcc.Size = New System.Drawing.Size(121, 15)
+        Me.LabelNewAcc.Size = New System.Drawing.Size(151, 20)
         Me.LabelNewAcc.TabIndex = 5
         Me.LabelNewAcc.Text = "Create New Account?"
         '
@@ -109,20 +106,21 @@ Partial Class form1
         Me.Logo.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Logo.Image = Global.JMGv2._0.My.Resources.Resources.logo_small_2
-        Me.Logo.Location = New System.Drawing.Point(345, 130)
+        Me.Logo.Location = New System.Drawing.Point(394, 173)
+        Me.Logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Logo.Name = "Logo"
-        Me.Logo.Size = New System.Drawing.Size(100, 100)
+        Me.Logo.Size = New System.Drawing.Size(114, 133)
         Me.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Logo.TabIndex = 7
         Me.Logo.TabStop = False
         '
         'form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Login_Small
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(896, 748)
         Me.Controls.Add(Me.Logo)
         Me.Controls.Add(Me.LabelNewAcc)
         Me.Controls.Add(Me.LinkSignUp)
@@ -130,7 +128,6 @@ Partial Class form1
         Me.Controls.Add(Me.AccID)
         Me.Controls.Add(Me.LoginBtn)
         Me.ForeColor = System.Drawing.Color.White
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "form1"
         Me.Text = "Form1"
         CType(Me.Logo, System.ComponentModel.ISupportInitialize).EndInit()
