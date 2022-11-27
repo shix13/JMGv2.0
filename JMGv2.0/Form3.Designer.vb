@@ -56,7 +56,7 @@ Partial Class Form3
         '
         'leftSideBar
         '
-        Me.leftSideBar.BackColor = System.Drawing.Color.Black
+        Me.leftSideBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.leftSideBar.Controls.Add(Me.lblWelcome)
         Me.leftSideBar.Controls.Add(Me.dtpPanelDate)
         Me.leftSideBar.Controls.Add(Me.logoutBtn)
@@ -74,7 +74,7 @@ Partial Class Form3
         Me.leftSideBar.Location = New System.Drawing.Point(0, 0)
         Me.leftSideBar.Margin = New System.Windows.Forms.Padding(0)
         Me.leftSideBar.Name = "leftSideBar"
-        Me.leftSideBar.Size = New System.Drawing.Size(57, 893)
+        Me.leftSideBar.Size = New System.Drawing.Size(57, 859)
         Me.leftSideBar.TabIndex = 0
         '
         'lblWelcome
@@ -278,11 +278,11 @@ Partial Class Form3
         '
         'MenuBar
         '
-        Me.MenuBar.BackColor = System.Drawing.Color.Black
+        Me.MenuBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MenuBar.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.clipart365828
         Me.MenuBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.MenuBar.Dock = System.Windows.Forms.DockStyle.Right
-        Me.MenuBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MenuBar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MenuBar.ImageAlign = System.Drawing.ContentAlignment.BottomRight
         Me.MenuBar.Location = New System.Drawing.Point(11, 0)
         Me.MenuBar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -295,8 +295,8 @@ Partial Class Form3
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
-        Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.bg
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
@@ -315,7 +315,7 @@ Partial Class Form3
         Me.Panel3.Location = New System.Drawing.Point(54, 120)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1072, 761)
+        Me.Panel3.Size = New System.Drawing.Size(1232, 739)
         Me.Panel3.TabIndex = 2
         '
         'Label2

@@ -134,8 +134,8 @@ Partial Class form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(882, 753)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.White
