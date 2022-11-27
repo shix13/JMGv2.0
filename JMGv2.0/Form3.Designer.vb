@@ -74,7 +74,7 @@ Partial Class Form3
         Me.leftSideBar.Location = New System.Drawing.Point(0, 0)
         Me.leftSideBar.Margin = New System.Windows.Forms.Padding(0)
         Me.leftSideBar.Name = "leftSideBar"
-        Me.leftSideBar.Size = New System.Drawing.Size(50, 670)
+        Me.leftSideBar.Size = New System.Drawing.Size(57, 893)
         Me.leftSideBar.TabIndex = 0
         '
         'lblWelcome
@@ -82,9 +82,9 @@ Partial Class Form3
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblWelcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblWelcome.Location = New System.Drawing.Point(47, 70)
+        Me.lblWelcome.Location = New System.Drawing.Point(54, 93)
         Me.lblWelcome.Name = "lblWelcome"
-        Me.lblWelcome.Size = New System.Drawing.Size(139, 20)
+        Me.lblWelcome.Size = New System.Drawing.Size(178, 25)
         Me.lblWelcome.TabIndex = 23
         Me.lblWelcome.Text = "WELCOME, ADMIN"
         '
@@ -93,18 +93,20 @@ Partial Class Form3
         Me.dtpPanelDate.CalendarMonthBackground = System.Drawing.Color.DarkGray
         Me.dtpPanelDate.Enabled = False
         Me.dtpPanelDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpPanelDate.Location = New System.Drawing.Point(67, 104)
+        Me.dtpPanelDate.Location = New System.Drawing.Point(77, 139)
+        Me.dtpPanelDate.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dtpPanelDate.Name = "dtpPanelDate"
-        Me.dtpPanelDate.Size = New System.Drawing.Size(100, 23)
+        Me.dtpPanelDate.Size = New System.Drawing.Size(114, 27)
         Me.dtpPanelDate.TabIndex = 22
         '
         'logoutBtn
         '
         Me.logoutBtn.BackColor = System.Drawing.Color.White
         Me.logoutBtn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.logoutBtn.Location = New System.Drawing.Point(68, 560)
+        Me.logoutBtn.Location = New System.Drawing.Point(78, 747)
+        Me.logoutBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.logoutBtn.Name = "logoutBtn"
-        Me.logoutBtn.Size = New System.Drawing.Size(88, 37)
+        Me.logoutBtn.Size = New System.Drawing.Size(101, 49)
         Me.logoutBtn.TabIndex = 19
         Me.logoutBtn.Text = "LOGOUT"
         Me.logoutBtn.UseVisualStyleBackColor = False
@@ -116,9 +118,10 @@ Partial Class Form3
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button8.Location = New System.Drawing.Point(3, 232)
+        Me.Button8.Location = New System.Drawing.Point(3, 309)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(43, 49)
+        Me.Button8.Size = New System.Drawing.Size(49, 65)
         Me.Button8.TabIndex = 15
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button8.UseVisualStyleBackColor = False
@@ -130,9 +133,10 @@ Partial Class Form3
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button7.Location = New System.Drawing.Point(3, 155)
+        Me.Button7.Location = New System.Drawing.Point(3, 207)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(43, 49)
+        Me.Button7.Size = New System.Drawing.Size(49, 65)
         Me.Button7.TabIndex = 14
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button7.UseVisualStyleBackColor = False
@@ -140,9 +144,10 @@ Partial Class Form3
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.JMGv2._0.My.Resources.Resources.kart
-        Me.PictureBox6.Location = New System.Drawing.Point(3, 469)
+        Me.PictureBox6.Location = New System.Drawing.Point(3, 625)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(43, 49)
+        Me.PictureBox6.Size = New System.Drawing.Size(49, 65)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 11
         Me.PictureBox6.TabStop = False
@@ -155,9 +160,10 @@ Partial Class Form3
         Me.PurBtn.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.PurBtn.ForeColor = System.Drawing.Color.White
         Me.PurBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.PurBtn.Location = New System.Drawing.Point(12, 469)
+        Me.PurBtn.Location = New System.Drawing.Point(14, 625)
+        Me.PurBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PurBtn.Name = "PurBtn"
-        Me.PurBtn.Size = New System.Drawing.Size(197, 49)
+        Me.PurBtn.Size = New System.Drawing.Size(225, 65)
         Me.PurBtn.TabIndex = 12
         Me.PurBtn.Text = "          PURCHASE ORDER"
         Me.PurBtn.UseVisualStyleBackColor = False
@@ -165,9 +171,10 @@ Partial Class Form3
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.JMGv2._0.My.Resources.Resources.profile_acc
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 390)
+        Me.PictureBox5.Location = New System.Drawing.Point(3, 520)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(43, 49)
+        Me.PictureBox5.Size = New System.Drawing.Size(49, 65)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 9
         Me.PictureBox5.TabStop = False
@@ -180,9 +187,10 @@ Partial Class Form3
         Me.AccBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.AccBtn.ForeColor = System.Drawing.Color.White
         Me.AccBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AccBtn.Location = New System.Drawing.Point(12, 390)
+        Me.AccBtn.Location = New System.Drawing.Point(14, 520)
+        Me.AccBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.AccBtn.Name = "AccBtn"
-        Me.AccBtn.Size = New System.Drawing.Size(197, 49)
+        Me.AccBtn.Size = New System.Drawing.Size(225, 65)
         Me.AccBtn.TabIndex = 10
         Me.AccBtn.Text = "          ACCOUNT"
         Me.AccBtn.UseVisualStyleBackColor = False
@@ -190,9 +198,10 @@ Partial Class Form3
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.JMGv2._0.My.Resources.Resources.Daco_4626465
-        Me.PictureBox4.Location = New System.Drawing.Point(3, 311)
+        Me.PictureBox4.Location = New System.Drawing.Point(3, 415)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(43, 49)
+        Me.PictureBox4.Size = New System.Drawing.Size(49, 65)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 7
         Me.PictureBox4.TabStop = False
@@ -205,9 +214,10 @@ Partial Class Form3
         Me.MainBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.MainBtn.ForeColor = System.Drawing.Color.White
         Me.MainBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MainBtn.Location = New System.Drawing.Point(12, 311)
+        Me.MainBtn.Location = New System.Drawing.Point(14, 415)
+        Me.MainBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MainBtn.Name = "MainBtn"
-        Me.MainBtn.Size = New System.Drawing.Size(197, 49)
+        Me.MainBtn.Size = New System.Drawing.Size(225, 65)
         Me.MainBtn.TabIndex = 8
         Me.MainBtn.Text = "          MAINTENANCE"
         Me.MainBtn.UseVisualStyleBackColor = False
@@ -220,9 +230,10 @@ Partial Class Form3
         Me.PayBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.PayBtn.ForeColor = System.Drawing.Color.White
         Me.PayBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.PayBtn.Location = New System.Drawing.Point(12, 232)
+        Me.PayBtn.Location = New System.Drawing.Point(14, 309)
+        Me.PayBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PayBtn.Name = "PayBtn"
-        Me.PayBtn.Size = New System.Drawing.Size(197, 49)
+        Me.PayBtn.Size = New System.Drawing.Size(225, 65)
         Me.PayBtn.TabIndex = 6
         Me.PayBtn.Text = "          PAYMENT"
         Me.PayBtn.UseVisualStyleBackColor = False
@@ -235,9 +246,10 @@ Partial Class Form3
         Me.OrderBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.OrderBtn.ForeColor = System.Drawing.Color.White
         Me.OrderBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.OrderBtn.Location = New System.Drawing.Point(12, 155)
+        Me.OrderBtn.Location = New System.Drawing.Point(14, 207)
+        Me.OrderBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.OrderBtn.Name = "OrderBtn"
-        Me.OrderBtn.Size = New System.Drawing.Size(197, 49)
+        Me.OrderBtn.Size = New System.Drawing.Size(225, 65)
         Me.OrderBtn.TabIndex = 4
         Me.OrderBtn.Text = "          ORDER"
         Me.OrderBtn.UseVisualStyleBackColor = False
@@ -248,8 +260,9 @@ Partial Class Form3
         Me.Panel1.Controls.Add(Me.MenuBar)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(50, 42)
+        Me.Panel1.Size = New System.Drawing.Size(57, 56)
         Me.Panel1.TabIndex = 16
         '
         'Label1
@@ -257,9 +270,9 @@ Partial Class Form3
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(54, 12)
+        Me.Label1.Location = New System.Drawing.Point(62, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 17)
+        Me.Label1.Size = New System.Drawing.Size(99, 23)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "MENU BAR"
         '
@@ -271,9 +284,10 @@ Partial Class Form3
         Me.MenuBar.Dock = System.Windows.Forms.DockStyle.Right
         Me.MenuBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MenuBar.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.MenuBar.Location = New System.Drawing.Point(10, 0)
+        Me.MenuBar.Location = New System.Drawing.Point(11, 0)
+        Me.MenuBar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MenuBar.Name = "MenuBar"
-        Me.MenuBar.Size = New System.Drawing.Size(40, 42)
+        Me.MenuBar.Size = New System.Drawing.Size(46, 56)
         Me.MenuBar.TabIndex = 13
         Me.MenuBar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.MenuBar.UseVisualStyleBackColor = False
@@ -286,7 +300,7 @@ Partial Class Form3
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(998, 90)
+        Me.Panel2.Size = New System.Drawing.Size(1286, 120)
         Me.Panel2.TabIndex = 1
         '
         'Timer1
@@ -298,19 +312,19 @@ Partial Class Form3
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Location = New System.Drawing.Point(47, 90)
+        Me.Panel3.Location = New System.Drawing.Point(54, 120)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(938, 571)
+        Me.Panel3.Size = New System.Drawing.Size(1072, 761)
         Me.Panel3.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(272, 36)
+        Me.Label2.Location = New System.Drawing.Point(311, 48)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(481, 55)
+        Me.Label2.Size = New System.Drawing.Size(598, 69)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "WELCOME, ADMIN!"
         '
@@ -318,24 +332,27 @@ Partial Class Form3
         '
         Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(274, 102)
+        Me.PictureBox1.Location = New System.Drawing.Point(313, 136)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(350, 350)
+        Me.PictureBox1.Size = New System.Drawing.Size(400, 467)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Form3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.DarkGray
-        Me.ClientSize = New System.Drawing.Size(984, 661)
+        Me.ClientSize = New System.Drawing.Size(1282, 853)
         Me.Controls.Add(Me.leftSideBar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel3)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.MaximizeBox = False
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
