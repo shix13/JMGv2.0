@@ -23,7 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="mainMenuItem.vb" />
+    <Compile Update="mainInventory.vb" />
     <Compile Update="mainSup.vb" />
     <Compile Update="mainEmp.vb">
       <SubType>Form</SubType>

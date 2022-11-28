@@ -1,7 +1,6 @@
 ﻿Imports IBM.Data.DB2
-
-Public Class Order
-    Private Conn As Common.DbConnection
+Public Class mainInventory
+    Private conn As Common.DbConnection
     Dim sidebar As String = "Close"
 
     Sub clear()
@@ -23,7 +22,7 @@ Public Class Order
     End Sub
 
 
-    Private Sub Order_Load(sender As Object, e As EventArgs)
+    Private Sub Form3_Load(sender As Object, e As EventArgs)
         Try
             conn = New DB2Connection("server=localhost;database=oneg;" + "uid=db2admin;password=db2admin;")
             conn.Open()
@@ -60,11 +59,11 @@ Public Class Order
 
         End If
     End Sub
-    Private Sub Order_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form3_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles MaintenancePanel.Paint
 
     End Sub
 
@@ -96,8 +95,20 @@ Public Class Order
 
     End Sub
 
+
     Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblPanelWelcome.Click
 
     End Sub
 
+    Private Sub lblTotal_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TableToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles tableMainSt.Click
+
+    End Sub
+
+    Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
+
+    End Sub
 End Class

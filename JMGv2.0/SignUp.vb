@@ -1,4 +1,7 @@
-﻿Public Class Form2
+﻿Imports IBM.Data.DB2
+
+Public Class SignUp
+    Private Conn As Common.DbConnection
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -19,15 +22,20 @@
 
     End Sub
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs)
-
+    Private Sub SignUp_Load(sender As Object, e As EventArgs)
+        Try
+            Conn = New DB2Connection("server=localhost;database=oneg;" + "uid=db2admin;password=db2admin;")
+            Conn.Open()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Form2_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub SignUp_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -40,10 +48,13 @@
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 End Class
