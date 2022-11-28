@@ -186,7 +186,7 @@ Partial Class Pay
         '
         'OrderIconBtn
         '
-        Me.OrderIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.OrderIconBtn.BackColor = System.Drawing.Color.Transparent
         Me.OrderIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.pinpng_com_checklist_icon_png_2009984
         Me.OrderIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.OrderIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat

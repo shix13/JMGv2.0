@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="mainSup.vb" />
     <Compile Update="mainEmp.vb">
       <SubType>Form</SubType>
     </Compile>

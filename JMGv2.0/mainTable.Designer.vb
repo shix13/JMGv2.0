@@ -47,7 +47,7 @@ Partial Class mainTable
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
-        Me.dgvPayment = New System.Windows.Forms.DataGridView()
+        Me.dgvTable = New System.Windows.Forms.DataGridView()
         Me.lbTableNum = New System.Windows.Forms.Label()
         Me.lblSeatNum = New System.Windows.Forms.Label()
         Me.cmbNumofSeat = New System.Windows.Forms.ComboBox()
@@ -62,7 +62,7 @@ Partial Class mainTable
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.dgvPayment, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuMaintenance.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -123,7 +123,7 @@ Partial Class mainTable
         '
         'MainIconBtn
         '
-        Me.MainIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.MainIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MainIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Daco_4626465
         Me.MainIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.MainIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -162,7 +162,7 @@ Partial Class mainTable
         '
         'PayIconBtn
         '
-        Me.PayIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.PayIconBtn.BackColor = System.Drawing.Color.Transparent
         Me.PayIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.PngItem_877239
         Me.PayIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PayIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -190,7 +190,7 @@ Partial Class mainTable
         '
         'OrderIconBtn
         '
-        Me.OrderIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.OrderIconBtn.BackColor = System.Drawing.Color.Transparent
         Me.OrderIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.pinpng_com_checklist_icon_png_2009984
         Me.OrderIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.OrderIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -240,7 +240,7 @@ Partial Class mainTable
         '
         'MainBtn
         '
-        Me.MainBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.MainBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MainBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MainBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MainBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -257,7 +257,7 @@ Partial Class mainTable
         '
         'PayBtn
         '
-        Me.PayBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.PayBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.PayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PayBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.PayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -365,7 +365,7 @@ Partial Class mainTable
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
         Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
-        Me.MaintenancePanel.Controls.Add(Me.dgvPayment)
+        Me.MaintenancePanel.Controls.Add(Me.dgvTable)
         Me.MaintenancePanel.Controls.Add(Me.lbTableNum)
         Me.MaintenancePanel.Controls.Add(Me.lblSeatNum)
         Me.MaintenancePanel.Controls.Add(Me.cmbNumofSeat)
@@ -414,15 +414,15 @@ Partial Class mainTable
         Me.DeleteBtn.Text = "Delete"
         Me.DeleteBtn.UseVisualStyleBackColor = True
         '
-        'dgvPayment
+        'dgvTable
         '
-        Me.dgvPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPayment.Location = New System.Drawing.Point(521, 107)
-        Me.dgvPayment.Name = "dgvPayment"
-        Me.dgvPayment.RowHeadersWidth = 51
-        Me.dgvPayment.RowTemplate.Height = 29
-        Me.dgvPayment.Size = New System.Drawing.Size(609, 513)
-        Me.dgvPayment.TabIndex = 7
+        Me.dgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTable.Location = New System.Drawing.Point(521, 107)
+        Me.dgvTable.Name = "dgvTable"
+        Me.dgvTable.RowHeadersWidth = 51
+        Me.dgvTable.RowTemplate.Height = 29
+        Me.dgvTable.Size = New System.Drawing.Size(609, 513)
+        Me.dgvTable.TabIndex = 7
         '
         'lbTableNum
         '
@@ -529,7 +529,7 @@ Partial Class mainTable
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.dgvPayment, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuMaintenance.ResumeLayout(False)
         Me.menuMaintenance.PerformLayout()
         Me.ResumeLayout(False)
@@ -561,7 +561,7 @@ Partial Class mainTable
     Friend WithEvents lblSeatNum As Label
     Friend WithEvents cmbNumofSeat As ComboBox
     Friend WithEvents txtbTableNum As TextBox
-    Friend WithEvents dgvPayment As DataGridView
+    Friend WithEvents dgvTable As DataGridView
     Friend WithEvents SaveBtn As Button
     Friend WithEvents DeleteBtn As Button
     Friend WithEvents menuMaintenance As MenuStrip
