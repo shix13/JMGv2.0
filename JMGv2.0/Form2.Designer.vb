@@ -199,7 +199,7 @@ Partial Class Form2
         Me.Controls.Add(Me.PictureBox2)
         Me.MaximizeBox = False
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Sign Up"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

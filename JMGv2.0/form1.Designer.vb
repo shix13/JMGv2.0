@@ -141,7 +141,7 @@ Partial Class form1
         Me.ForeColor = System.Drawing.Color.White
         Me.MaximizeBox = False
         Me.Name = "form1"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

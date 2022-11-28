@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form3
+Partial Class Order
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,14 +41,29 @@ Partial Class Form3
         Me.lblPanelMenuBar = New System.Windows.Forms.Label()
         Me.MenuBarBtn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.SaveBtn = New System.Windows.Forms.Button()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.CloseBtn = New System.Windows.Forms.Button()
+        Me.boxSearchMenu = New System.Windows.Forms.TextBox()
+        Me.TableOrderBtn = New System.Windows.Forms.Button()
+        Me.AllOrderBtn = New System.Windows.Forms.Button()
+        Me.dgvOrder = New System.Windows.Forms.DataGridView()
+        Me.dgvSearchMenu = New System.Windows.Forms.DataGridView()
+        Me.lblOrderNum = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblTableNum = New System.Windows.Forms.Label()
+        Me.txtbTotal = New System.Windows.Forms.TextBox()
+        Me.cmbTableNum = New System.Windows.Forms.ComboBox()
+        Me.txtbOrdNum = New System.Windows.Forms.TextBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvSearchMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -175,7 +190,7 @@ Partial Class Form3
         '
         'OrderIconBtn
         '
-        Me.OrderIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.OrderIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.OrderIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.pinpng_com_checklist_icon_png_2009984
         Me.OrderIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.OrderIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -259,7 +274,7 @@ Partial Class Form3
         '
         'OrderBtn
         '
-        Me.OrderBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.OrderBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.OrderBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.OrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.OrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -318,12 +333,26 @@ Partial Class Form3
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1286, 120)
         Me.Panel2.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(446, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(466, 74)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "CREATE ORDER"
         '
         'Timer1
         '
@@ -333,40 +362,171 @@ Partial Class Form3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.ForeColor = System.Drawing.Color.Crimson
+        Me.Panel3.Controls.Add(Me.SaveBtn)
+        Me.Panel3.Controls.Add(Me.DeleteBtn)
+        Me.Panel3.Controls.Add(Me.CloseBtn)
+        Me.Panel3.Controls.Add(Me.boxSearchMenu)
+        Me.Panel3.Controls.Add(Me.TableOrderBtn)
+        Me.Panel3.Controls.Add(Me.AllOrderBtn)
+        Me.Panel3.Controls.Add(Me.dgvOrder)
+        Me.Panel3.Controls.Add(Me.dgvSearchMenu)
+        Me.Panel3.Controls.Add(Me.lblOrderNum)
+        Me.Panel3.Controls.Add(Me.lblTotal)
+        Me.Panel3.Controls.Add(Me.lblTableNum)
+        Me.Panel3.Controls.Add(Me.txtbTotal)
+        Me.Panel3.Controls.Add(Me.cmbTableNum)
+        Me.Panel3.Controls.Add(Me.txtbOrdNum)
+        Me.Panel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(54, 120)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1232, 739)
         Me.Panel3.TabIndex = 2
         '
-        'PictureBox1
+        'SaveBtn
         '
-        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(418, 145)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(400, 467)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.SaveBtn.Location = New System.Drawing.Point(881, 657)
+        Me.SaveBtn.Name = "SaveBtn"
+        Me.SaveBtn.Size = New System.Drawing.Size(141, 37)
+        Me.SaveBtn.TabIndex = 13
+        Me.SaveBtn.Text = "Save Order"
+        Me.SaveBtn.UseVisualStyleBackColor = True
         '
-        'Label2
+        'DeleteBtn
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Myanmar Text", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(283, 25)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(758, 142)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "WELCOME, ADMIN!"
+        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.DeleteBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.DeleteBtn.Location = New System.Drawing.Point(1028, 657)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(141, 37)
+        Me.DeleteBtn.TabIndex = 12
+        Me.DeleteBtn.Text = "Delete Order"
+        Me.DeleteBtn.UseVisualStyleBackColor = True
         '
-        'Form3
+        'CloseBtn
+        '
+        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.CloseBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.CloseBtn.Location = New System.Drawing.Point(59, 657)
+        Me.CloseBtn.Name = "CloseBtn"
+        Me.CloseBtn.Size = New System.Drawing.Size(99, 37)
+        Me.CloseBtn.TabIndex = 11
+        Me.CloseBtn.Text = "Close"
+        Me.CloseBtn.UseVisualStyleBackColor = True
+        '
+        'boxSearchMenu
+        '
+        Me.boxSearchMenu.Location = New System.Drawing.Point(280, 138)
+        Me.boxSearchMenu.Name = "boxSearchMenu"
+        Me.boxSearchMenu.Size = New System.Drawing.Size(306, 27)
+        Me.boxSearchMenu.TabIndex = 10
+        Me.boxSearchMenu.Text = "Search Menu"
+        '
+        'TableOrderBtn
+        '
+        Me.TableOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TableOrderBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TableOrderBtn.ForeColor = System.Drawing.Color.White
+        Me.TableOrderBtn.Location = New System.Drawing.Point(899, 130)
+        Me.TableOrderBtn.Name = "TableOrderBtn"
+        Me.TableOrderBtn.Size = New System.Drawing.Size(132, 37)
+        Me.TableOrderBtn.TabIndex = 9
+        Me.TableOrderBtn.Text = "Table Order"
+        Me.TableOrderBtn.UseVisualStyleBackColor = True
+        '
+        'AllOrderBtn
+        '
+        Me.AllOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AllOrderBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.AllOrderBtn.ForeColor = System.Drawing.Color.White
+        Me.AllOrderBtn.Location = New System.Drawing.Point(1037, 130)
+        Me.AllOrderBtn.Name = "AllOrderBtn"
+        Me.AllOrderBtn.Size = New System.Drawing.Size(132, 37)
+        Me.AllOrderBtn.TabIndex = 8
+        Me.AllOrderBtn.Text = "All Orders"
+        Me.AllOrderBtn.UseVisualStyleBackColor = True
+        '
+        'dgvOrder
+        '
+        Me.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvOrder.Location = New System.Drawing.Point(642, 175)
+        Me.dgvOrder.Name = "dgvOrder"
+        Me.dgvOrder.RowHeadersWidth = 51
+        Me.dgvOrder.RowTemplate.Height = 29
+        Me.dgvOrder.Size = New System.Drawing.Size(527, 467)
+        Me.dgvOrder.TabIndex = 7
+        '
+        'dgvSearchMenu
+        '
+        Me.dgvSearchMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSearchMenu.Location = New System.Drawing.Point(59, 174)
+        Me.dgvSearchMenu.Name = "dgvSearchMenu"
+        Me.dgvSearchMenu.RowHeadersWidth = 51
+        Me.dgvSearchMenu.RowTemplate.Height = 29
+        Me.dgvSearchMenu.Size = New System.Drawing.Size(527, 468)
+        Me.dgvSearchMenu.TabIndex = 6
+        '
+        'lblOrderNum
+        '
+        Me.lblOrderNum.AutoSize = True
+        Me.lblOrderNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblOrderNum.ForeColor = System.Drawing.Color.White
+        Me.lblOrderNum.Location = New System.Drawing.Point(463, 39)
+        Me.lblOrderNum.Name = "lblOrderNum"
+        Me.lblOrderNum.Size = New System.Drawing.Size(171, 27)
+        Me.lblOrderNum.TabIndex = 5
+        Me.lblOrderNum.Text = "Order Number"
+        '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTotal.ForeColor = System.Drawing.Color.White
+        Me.lblTotal.Location = New System.Drawing.Point(845, 39)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(65, 27)
+        Me.lblTotal.TabIndex = 4
+        Me.lblTotal.Text = "Total"
+        '
+        'lblTableNum
+        '
+        Me.lblTableNum.AutoSize = True
+        Me.lblTableNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTableNum.ForeColor = System.Drawing.Color.White
+        Me.lblTableNum.Location = New System.Drawing.Point(79, 40)
+        Me.lblTableNum.Name = "lblTableNum"
+        Me.lblTableNum.Size = New System.Drawing.Size(169, 27)
+        Me.lblTableNum.TabIndex = 3
+        Me.lblTableNum.Text = "Table Number"
+        '
+        'txtbTotal
+        '
+        Me.txtbTotal.Location = New System.Drawing.Point(845, 70)
+        Me.txtbTotal.Name = "txtbTotal"
+        Me.txtbTotal.Size = New System.Drawing.Size(306, 27)
+        Me.txtbTotal.TabIndex = 2
+        '
+        'cmbTableNum
+        '
+        Me.cmbTableNum.FormattingEnabled = True
+        Me.cmbTableNum.Location = New System.Drawing.Point(79, 70)
+        Me.cmbTableNum.Name = "cmbTableNum"
+        Me.cmbTableNum.Size = New System.Drawing.Size(306, 28)
+        Me.cmbTableNum.TabIndex = 1
+        '
+        'txtbOrdNum
+        '
+        Me.txtbOrdNum.Location = New System.Drawing.Point(463, 70)
+        Me.txtbOrdNum.Name = "txtbOrdNum"
+        Me.txtbOrdNum.Size = New System.Drawing.Size(306, 27)
+        Me.txtbOrdNum.TabIndex = 0
+        '
+        'Order
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -379,16 +539,19 @@ Partial Class Form3
         Me.Controls.Add(Me.Panel3)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "Form3"
+        Me.Name = "Order"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "HOME"
+        Me.Text = "ORDER"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvOrder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvSearchMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -408,11 +571,24 @@ Partial Class Form3
     Friend WithEvents lblPanelMenuBar As Label
     Friend WithEvents logoutBtn As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents lblPanelWelcome As Label
     Friend WithEvents dtpPanelDate As DateTimePicker
     Friend WithEvents MainIconBtn As Button
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents lblOrderNum As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblTableNum As Label
+    Friend WithEvents txtbTotal As TextBox
+    Friend WithEvents cmbTableNum As ComboBox
+    Friend WithEvents txtbOrdNum As TextBox
+    Friend WithEvents boxSearchMenu As TextBox
+    Friend WithEvents TableOrderBtn As Button
+    Friend WithEvents AllOrderBtn As Button
+    Friend WithEvents dgvOrder As DataGridView
+    Friend WithEvents dgvSearchMenu As DataGridView
+    Friend WithEvents SaveBtn As Button
+    Friend WithEvents DeleteBtn As Button
+    Friend WithEvents CloseBtn As Button
 End Class
