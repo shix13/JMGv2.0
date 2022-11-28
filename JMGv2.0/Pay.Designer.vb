@@ -498,7 +498,7 @@ Partial Class Pay
         Me.MaximizeBox = False
         Me.Name = "Pay"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ORDER"
+        Me.Text = "PAYMENT"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)

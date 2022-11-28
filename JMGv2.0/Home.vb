@@ -1,4 +1,4 @@
-﻿Public Class Form3
+﻿Public Class Home
     Dim sidebar As String = "Close"
 
     Sub clear()

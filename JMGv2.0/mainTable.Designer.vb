@@ -520,7 +520,7 @@ Partial Class mainTable
         Me.MaximizeBox = False
         Me.Name = "mainTable"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ORDER"
+        Me.Text = "Maintenance (TABLE)"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
