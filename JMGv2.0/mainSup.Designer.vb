@@ -44,6 +44,7 @@ Partial Class mainSup
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
+        Me.searchSup = New System.Windows.Forms.TextBox()
         Me.lblContactNo = New System.Windows.Forms.Label()
         Me.txtbContactNo = New System.Windows.Forms.TextBox()
         Me.lblSupName = New System.Windows.Forms.Label()
@@ -51,6 +52,7 @@ Partial Class mainSup
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.dgvSupplier = New System.Windows.Forms.DataGridView()
         Me.lblSupID = New System.Windows.Forms.Label()
         Me.txtbSupID = New System.Windows.Forms.TextBox()
         Me.menuMaintenance = New System.Windows.Forms.MenuStrip()
@@ -59,14 +61,12 @@ Partial Class mainSup
         Me.supplierMainSt = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuMainSt = New System.Windows.Forms.ToolStripMenuItem()
         Me.inventoryMenuSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.searchSup = New System.Windows.Forms.TextBox()
-        Me.dgvSupplier = New System.Windows.Forms.DataGridView()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        Me.menuMaintenance.SuspendLayout()
         CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.menuMaintenance.SuspendLayout()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -384,6 +384,14 @@ Partial Class mainSup
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
         '
+        'searchSup
+        '
+        Me.searchSup.Location = New System.Drawing.Point(824, 87)
+        Me.searchSup.Name = "searchSup"
+        Me.searchSup.Size = New System.Drawing.Size(306, 27)
+        Me.searchSup.TabIndex = 27
+        Me.searchSup.Text = "Search Supplier"
+        '
         'lblContactNo
         '
         Me.lblContactNo.AutoSize = True
@@ -456,6 +464,16 @@ Partial Class mainSup
         Me.DeleteBtn.Text = "Delete"
         Me.DeleteBtn.UseVisualStyleBackColor = True
         '
+        'dgvSupplier
+        '
+        Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSupplier.Location = New System.Drawing.Point(521, 122)
+        Me.dgvSupplier.Name = "dgvSupplier"
+        Me.dgvSupplier.RowHeadersWidth = 51
+        Me.dgvSupplier.RowTemplate.Height = 29
+        Me.dgvSupplier.Size = New System.Drawing.Size(609, 498)
+        Me.dgvSupplier.TabIndex = 7
+        '
         'lblSupID
         '
         Me.lblSupID.AutoSize = True
@@ -501,6 +519,7 @@ Partial Class mainSup
         '
         'supplierMainSt
         '
+        Me.supplierMainSt.ForeColor = System.Drawing.Color.SteelBlue
         Me.supplierMainSt.Name = "supplierMainSt"
         Me.supplierMainSt.Size = New System.Drawing.Size(96, 29)
         Me.supplierMainSt.Text = "Supplier"
@@ -516,24 +535,6 @@ Partial Class mainSup
         Me.inventoryMenuSt.Name = "inventoryMenuSt"
         Me.inventoryMenuSt.Size = New System.Drawing.Size(109, 29)
         Me.inventoryMenuSt.Text = "Inventory"
-        '
-        'searchSup
-        '
-        Me.searchSup.Location = New System.Drawing.Point(824, 87)
-        Me.searchSup.Name = "searchSup"
-        Me.searchSup.Size = New System.Drawing.Size(306, 27)
-        Me.searchSup.TabIndex = 27
-        Me.searchSup.Text = "Search Supplier"
-        '
-        'dgvSupplier
-        '
-        Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSupplier.Location = New System.Drawing.Point(521, 122)
-        Me.dgvSupplier.Name = "dgvSupplier"
-        Me.dgvSupplier.RowHeadersWidth = 51
-        Me.dgvSupplier.RowTemplate.Height = 29
-        Me.dgvSupplier.Size = New System.Drawing.Size(609, 498)
-        Me.dgvSupplier.TabIndex = 7
         '
         'mainSup
         '
@@ -560,9 +561,9 @@ Partial Class mainSup
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
+        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuMaintenance.ResumeLayout(False)
         Me.menuMaintenance.PerformLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

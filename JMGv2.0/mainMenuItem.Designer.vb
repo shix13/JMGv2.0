@@ -579,6 +579,7 @@ Partial Class mainMenuItem
         '
         'menuMainSt
         '
+        Me.menuMainSt.ForeColor = System.Drawing.Color.SteelBlue
         Me.menuMainSt.Name = "menuMainSt"
         Me.menuMainSt.Size = New System.Drawing.Size(75, 29)
         Me.menuMainSt.Text = "Menu"

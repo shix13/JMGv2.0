@@ -579,6 +579,7 @@ Partial Class mainEmp
         '
         'employeeMainSt
         '
+        Me.employeeMainSt.ForeColor = System.Drawing.Color.SteelBlue
         Me.employeeMainSt.Name = "employeeMainSt"
         Me.employeeMainSt.Size = New System.Drawing.Size(110, 29)
         Me.employeeMainSt.Text = "Employee"

@@ -555,6 +555,7 @@ Partial Class mainInventory
         '
         'inventoryMenuSt
         '
+        Me.inventoryMenuSt.ForeColor = System.Drawing.Color.SteelBlue
         Me.inventoryMenuSt.Name = "inventoryMenuSt"
         Me.inventoryMenuSt.Size = New System.Drawing.Size(109, 29)
         Me.inventoryMenuSt.Text = "Inventory"

@@ -26,6 +26,7 @@
     <Compile Update="Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AccountUser.vb" />
     <Compile Update="mainMenuItem.vb" />
     <Compile Update="mainInventory.vb" />
     <Compile Update="mainSup.vb" />

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class mainTable
+Partial Class AccountUser
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -44,26 +44,26 @@ Partial Class mainTable
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
-        Me.DeleteBtn = New System.Windows.Forms.Button()
-        Me.dgvTable = New System.Windows.Forms.DataGridView()
         Me.lbTableNum = New System.Windows.Forms.Label()
-        Me.lblSeatNum = New System.Windows.Forms.Label()
-        Me.cmbNumofSeat = New System.Windows.Forms.ComboBox()
         Me.txtbTableNum = New System.Windows.Forms.TextBox()
-        Me.menuMaintenance = New System.Windows.Forms.MenuStrip()
-        Me.tableMainSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.employeeMainSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.supplierMainSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.menuMainSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.inventoryMenuSt = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.dgvTable, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.menuMaintenance.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -107,7 +107,7 @@ Partial Class mainTable
         '
         'AccIconBtn
         '
-        Me.AccIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.AccIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.AccIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.profile_acc
         Me.AccIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AccIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -123,7 +123,7 @@ Partial Class mainTable
         '
         'MainIconBtn
         '
-        Me.MainIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.MainIconBtn.BackColor = System.Drawing.Color.Transparent
         Me.MainIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Daco_4626465
         Me.MainIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.MainIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -223,14 +223,14 @@ Partial Class mainTable
         '
         'AccBtn
         '
-        Me.AccBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.AccBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.AccBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.AccBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.AccBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AccBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.AccBtn.ForeColor = System.Drawing.Color.White
         Me.AccBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AccBtn.Location = New System.Drawing.Point(57, 520)
+        Me.AccBtn.Location = New System.Drawing.Point(54, 520)
         Me.AccBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.AccBtn.Name = "AccBtn"
         Me.AccBtn.Size = New System.Drawing.Size(200, 65)
@@ -240,7 +240,7 @@ Partial Class mainTable
         '
         'MainBtn
         '
-        Me.MainBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.MainBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MainBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MainBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MainBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -362,21 +362,117 @@ Partial Class mainTable
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MaintenancePanel.Controls.Add(Me.PictureBox1)
+        Me.MaintenancePanel.Controls.Add(Me.Label6)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox5)
+        Me.MaintenancePanel.Controls.Add(Me.Label5)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox4)
+        Me.MaintenancePanel.Controls.Add(Me.Label3)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox3)
+        Me.MaintenancePanel.Controls.Add(Me.Label2)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox2)
+        Me.MaintenancePanel.Controls.Add(Me.Label1)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
-        Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
-        Me.MaintenancePanel.Controls.Add(Me.dgvTable)
         Me.MaintenancePanel.Controls.Add(Me.lbTableNum)
-        Me.MaintenancePanel.Controls.Add(Me.lblSeatNum)
-        Me.MaintenancePanel.Controls.Add(Me.cmbNumofSeat)
         Me.MaintenancePanel.Controls.Add(Me.txtbTableNum)
-        Me.MaintenancePanel.Controls.Add(Me.menuMaintenance)
         Me.MaintenancePanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MaintenancePanel.Location = New System.Drawing.Point(54, 120)
         Me.MaintenancePanel.Margin = New System.Windows.Forms.Padding(0)
         Me.MaintenancePanel.Name = "MaintenancePanel"
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(758, 501)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(115, 27)
+        Me.Label6.TabIndex = 26
+        Me.Label6.Text = "Password"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(758, 532)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox5.TabIndex = 25
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(758, 413)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(98, 27)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Position"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(758, 444)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox4.TabIndex = 23
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(758, 324)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(162, 27)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Middle name"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(758, 355)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox3.TabIndex = 21
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(758, 234)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(125, 27)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "First name"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(758, 265)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox2.TabIndex = 19
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(758, 149)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(126, 27)
+        Me.Label1.TabIndex = 18
+        Me.Label1.Text = "Last name"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(758, 180)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox1.TabIndex = 17
         '
         'CloseBtn
         '
@@ -395,117 +491,43 @@ Partial Class mainTable
         Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.SaveBtn.Location = New System.Drawing.Point(207, 472)
+        Me.SaveBtn.Location = New System.Drawing.Point(901, 642)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(103, 37)
         Me.SaveBtn.TabIndex = 13
         Me.SaveBtn.Text = "Save"
         Me.SaveBtn.UseVisualStyleBackColor = True
         '
-        'DeleteBtn
-        '
-        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.DeleteBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.DeleteBtn.Location = New System.Drawing.Point(316, 472)
-        Me.DeleteBtn.Name = "DeleteBtn"
-        Me.DeleteBtn.Size = New System.Drawing.Size(99, 37)
-        Me.DeleteBtn.TabIndex = 11
-        Me.DeleteBtn.Text = "Delete"
-        Me.DeleteBtn.UseVisualStyleBackColor = True
-        '
-        'dgvTable
-        '
-        Me.dgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTable.Location = New System.Drawing.Point(521, 107)
-        Me.dgvTable.Name = "dgvTable"
-        Me.dgvTable.RowHeadersWidth = 51
-        Me.dgvTable.RowTemplate.Height = 29
-        Me.dgvTable.Size = New System.Drawing.Size(609, 513)
-        Me.dgvTable.TabIndex = 7
-        '
         'lbTableNum
         '
         Me.lbTableNum.AutoSize = True
         Me.lbTableNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lbTableNum.ForeColor = System.Drawing.Color.White
-        Me.lbTableNum.Location = New System.Drawing.Point(109, 203)
+        Me.lbTableNum.Location = New System.Drawing.Point(758, 65)
         Me.lbTableNum.Name = "lbTableNum"
-        Me.lbTableNum.Size = New System.Drawing.Size(169, 27)
+        Me.lbTableNum.Size = New System.Drawing.Size(137, 27)
         Me.lbTableNum.TabIndex = 5
-        Me.lbTableNum.Text = "Table Number"
-        '
-        'lblSeatNum
-        '
-        Me.lblSeatNum.AutoSize = True
-        Me.lblSeatNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSeatNum.ForeColor = System.Drawing.Color.White
-        Me.lblSeatNum.Location = New System.Drawing.Point(109, 302)
-        Me.lblSeatNum.Name = "lblSeatNum"
-        Me.lblSeatNum.Size = New System.Drawing.Size(184, 27)
-        Me.lblSeatNum.TabIndex = 3
-        Me.lblSeatNum.Text = "Number of Seat"
-        '
-        'cmbNumofSeat
-        '
-        Me.cmbNumofSeat.FormattingEnabled = True
-        Me.cmbNumofSeat.Location = New System.Drawing.Point(109, 332)
-        Me.cmbNumofSeat.Name = "cmbNumofSeat"
-        Me.cmbNumofSeat.Size = New System.Drawing.Size(306, 28)
-        Me.cmbNumofSeat.TabIndex = 1
+        Me.lbTableNum.Text = "Account ID"
         '
         'txtbTableNum
         '
-        Me.txtbTableNum.Location = New System.Drawing.Point(109, 234)
+        Me.txtbTableNum.Location = New System.Drawing.Point(758, 96)
         Me.txtbTableNum.Name = "txtbTableNum"
         Me.txtbTableNum.Size = New System.Drawing.Size(306, 27)
         Me.txtbTableNum.TabIndex = 0
         '
-        'menuMaintenance
+        'PictureBox1
         '
-        Me.menuMaintenance.Font = New System.Drawing.Font("Malgun Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.menuMaintenance.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
-        Me.menuMaintenance.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.menuMaintenance.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tableMainSt, Me.employeeMainSt, Me.supplierMainSt, Me.menuMainSt, Me.inventoryMenuSt})
-        Me.menuMaintenance.Location = New System.Drawing.Point(0, 0)
-        Me.menuMaintenance.Name = "menuMaintenance"
-        Me.menuMaintenance.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.menuMaintenance.Size = New System.Drawing.Size(1232, 33)
-        Me.menuMaintenance.TabIndex = 15
-        Me.menuMaintenance.Text = "MenuStrip1"
+        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(103, 96)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(517, 449)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 27
+        Me.PictureBox1.TabStop = False
         '
-        'tableMainSt
-        '
-        Me.tableMainSt.ForeColor = System.Drawing.Color.SteelBlue
-        Me.tableMainSt.Name = "tableMainSt"
-        Me.tableMainSt.Size = New System.Drawing.Size(72, 29)
-        Me.tableMainSt.Text = "Table"
-        '
-        'employeeMainSt
-        '
-        Me.employeeMainSt.Name = "employeeMainSt"
-        Me.employeeMainSt.Size = New System.Drawing.Size(110, 29)
-        Me.employeeMainSt.Text = "Employee"
-        '
-        'supplierMainSt
-        '
-        Me.supplierMainSt.Name = "supplierMainSt"
-        Me.supplierMainSt.Size = New System.Drawing.Size(96, 29)
-        Me.supplierMainSt.Text = "Supplier"
-        '
-        'menuMainSt
-        '
-        Me.menuMainSt.Name = "menuMainSt"
-        Me.menuMainSt.Size = New System.Drawing.Size(75, 29)
-        Me.menuMainSt.Text = "Menu"
-        '
-        'inventoryMenuSt
-        '
-        Me.inventoryMenuSt.Name = "inventoryMenuSt"
-        Me.inventoryMenuSt.Size = New System.Drawing.Size(109, 29)
-        Me.inventoryMenuSt.Text = "Inventory"
-        '
-        'mainTable
+        'AccountUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -516,12 +538,11 @@ Partial Class mainTable
         Me.Controls.Add(Me.leftSideBar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.MaintenancePanel)
-        Me.MainMenuStrip = Me.menuMaintenance
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "mainTable"
+        Me.Name = "AccountUser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Maintenance (TABLE)"
+        Me.Text = "Maintenance (EMPLOYEE)"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -530,9 +551,7 @@ Partial Class mainTable
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.dgvTable, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.menuMaintenance.ResumeLayout(False)
-        Me.menuMaintenance.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -559,17 +578,18 @@ Partial Class mainTable
     Friend WithEvents AccIconBtn As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents lbTableNum As Label
-    Friend WithEvents lblSeatNum As Label
-    Friend WithEvents cmbNumofSeat As ComboBox
     Friend WithEvents txtbTableNum As TextBox
-    Friend WithEvents dgvTable As DataGridView
     Friend WithEvents SaveBtn As Button
-    Friend WithEvents DeleteBtn As Button
-    Friend WithEvents menuMaintenance As MenuStrip
-    Friend WithEvents tableMainSt As ToolStripMenuItem
-    Friend WithEvents employeeMainSt As ToolStripMenuItem
-    Friend WithEvents supplierMainSt As ToolStripMenuItem
-    Friend WithEvents menuMainSt As ToolStripMenuItem
-    Friend WithEvents inventoryMenuSt As ToolStripMenuItem
     Friend WithEvents CloseBtn As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

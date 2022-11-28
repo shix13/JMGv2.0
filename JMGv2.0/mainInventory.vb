@@ -111,4 +111,8 @@ Public Class mainInventory
     Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
 
     End Sub
+
+    Private Sub inventoryMenuSt_Click(sender As Object, e As EventArgs) Handles inventoryMenuSt.Click
+
+    End Sub
 End Class
