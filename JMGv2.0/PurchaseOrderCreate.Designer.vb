@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class AccountUser
+Partial Class PurchaseOrderCreate
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -44,26 +44,24 @@ Partial Class AccountUser
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
-        Me.lbTableNum = New System.Windows.Forms.Label()
-        Me.txtbTableNum = New System.Windows.Forms.TextBox()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
+        Me.menuPurchaseOrder = New System.Windows.Forms.MenuStrip()
+        Me.inventoryMenuSt = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AllPurchasesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.menuPurchaseOrder.SuspendLayout()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -91,7 +89,7 @@ Partial Class AccountUser
         '
         'PurIconBtn
         '
-        Me.PurIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.PurIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.PurIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.kart
         Me.PurIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PurIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -107,7 +105,7 @@ Partial Class AccountUser
         '
         'AccIconBtn
         '
-        Me.AccIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.AccIconBtn.BackColor = System.Drawing.Color.Transparent
         Me.AccIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.profile_acc
         Me.AccIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AccIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -206,7 +204,7 @@ Partial Class AccountUser
         '
         'PurBtn
         '
-        Me.PurBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.PurBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.PurBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PurBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.PurBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -223,14 +221,14 @@ Partial Class AccountUser
         '
         'AccBtn
         '
-        Me.AccBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.AccBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.AccBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.AccBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.AccBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AccBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.AccBtn.ForeColor = System.Drawing.Color.White
         Me.AccBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AccBtn.Location = New System.Drawing.Point(54, 520)
+        Me.AccBtn.Location = New System.Drawing.Point(57, 520)
         Me.AccBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.AccBtn.Name = "AccBtn"
         Me.AccBtn.Size = New System.Drawing.Size(200, 65)
@@ -348,11 +346,11 @@ Partial Class AccountUser
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(519, 21)
+        Me.Label4.Location = New System.Drawing.Point(405, 16)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(331, 74)
+        Me.Label4.Size = New System.Drawing.Size(553, 74)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "ACCOUNT"
+        Me.Label4.Text = "PURCHASE ORDER"
         '
         'Timer1
         '
@@ -362,21 +360,15 @@ Partial Class AccountUser
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MaintenancePanel.Controls.Add(Me.PictureBox1)
-        Me.MaintenancePanel.Controls.Add(Me.Label6)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox5)
-        Me.MaintenancePanel.Controls.Add(Me.Label5)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox4)
-        Me.MaintenancePanel.Controls.Add(Me.Label3)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox3)
-        Me.MaintenancePanel.Controls.Add(Me.Label2)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox2)
-        Me.MaintenancePanel.Controls.Add(Me.Label1)
         Me.MaintenancePanel.Controls.Add(Me.TextBox1)
+        Me.MaintenancePanel.Controls.Add(Me.Button2)
+        Me.MaintenancePanel.Controls.Add(Me.Button1)
+        Me.MaintenancePanel.Controls.Add(Me.DataGridView2)
+        Me.MaintenancePanel.Controls.Add(Me.DataGridView1)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
-        Me.MaintenancePanel.Controls.Add(Me.lbTableNum)
-        Me.MaintenancePanel.Controls.Add(Me.txtbTableNum)
+        Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
+        Me.MaintenancePanel.Controls.Add(Me.menuPurchaseOrder)
         Me.MaintenancePanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MaintenancePanel.Location = New System.Drawing.Point(54, 120)
         Me.MaintenancePanel.Margin = New System.Windows.Forms.Padding(0)
@@ -384,113 +376,64 @@ Partial Class AccountUser
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(81, 67)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(589, 578)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 27
-        Me.PictureBox1.TabStop = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(802, 518)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(115, 27)
-        Me.Label6.TabIndex = 26
-        Me.Label6.Text = "Password"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(802, 549)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox5.TabIndex = 25
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(802, 430)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(98, 27)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Position"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(802, 461)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox4.TabIndex = 23
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(802, 341)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(162, 27)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Middle name"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(802, 372)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox3.TabIndex = 21
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(802, 251)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(125, 27)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "First name"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(802, 282)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox2.TabIndex = 19
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(802, 166)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(126, 27)
-        Me.Label1.TabIndex = 18
-        Me.Label1.Text = "Last name"
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(802, 197)
+        Me.TextBox1.Location = New System.Drawing.Point(580, 411)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox1.TabIndex = 17
+        Me.TextBox1.Size = New System.Drawing.Size(256, 27)
+        Me.TextBox1.TabIndex = 21
+        Me.TextBox1.Text = "Search"
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(184, 403)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(127, 37)
+        Me.Button2.TabIndex = 20
+        Me.Button2.Text = "Supplier"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(51, 403)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(127, 37)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "Ingredients"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(51, 447)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 29
+        Me.DataGridView2.Size = New System.Drawing.Size(785, 245)
+        Me.DataGridView2.TabIndex = 18
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(51, 78)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 29
+        Me.DataGridView1.Size = New System.Drawing.Size(1127, 282)
+        Me.DataGridView1.TabIndex = 17
         '
         'CloseBtn
         '
         Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.CloseBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.CloseBtn.Location = New System.Drawing.Point(1009, 627)
+        Me.CloseBtn.Location = New System.Drawing.Point(1079, 655)
         Me.CloseBtn.Name = "CloseBtn"
         Me.CloseBtn.Size = New System.Drawing.Size(99, 37)
         Me.CloseBtn.TabIndex = 16
@@ -502,32 +445,52 @@ Partial Class AccountUser
         Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.SaveBtn.Location = New System.Drawing.Point(879, 627)
+        Me.SaveBtn.Location = New System.Drawing.Point(970, 403)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(103, 37)
         Me.SaveBtn.TabIndex = 13
         Me.SaveBtn.Text = "Save"
         Me.SaveBtn.UseVisualStyleBackColor = True
         '
-        'lbTableNum
+        'DeleteBtn
         '
-        Me.lbTableNum.AutoSize = True
-        Me.lbTableNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbTableNum.ForeColor = System.Drawing.Color.White
-        Me.lbTableNum.Location = New System.Drawing.Point(802, 82)
-        Me.lbTableNum.Name = "lbTableNum"
-        Me.lbTableNum.Size = New System.Drawing.Size(137, 27)
-        Me.lbTableNum.TabIndex = 5
-        Me.lbTableNum.Text = "Account ID"
+        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.DeleteBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.DeleteBtn.Location = New System.Drawing.Point(1079, 403)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(99, 37)
+        Me.DeleteBtn.TabIndex = 11
+        Me.DeleteBtn.Text = "Delete"
+        Me.DeleteBtn.UseVisualStyleBackColor = True
         '
-        'txtbTableNum
+        'menuPurchaseOrder
         '
-        Me.txtbTableNum.Location = New System.Drawing.Point(802, 113)
-        Me.txtbTableNum.Name = "txtbTableNum"
-        Me.txtbTableNum.Size = New System.Drawing.Size(306, 27)
-        Me.txtbTableNum.TabIndex = 0
+        Me.menuPurchaseOrder.Font = New System.Drawing.Font("Malgun Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.menuPurchaseOrder.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
+        Me.menuPurchaseOrder.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.menuPurchaseOrder.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.inventoryMenuSt, Me.AllPurchasesToolStripMenuItem})
+        Me.menuPurchaseOrder.Location = New System.Drawing.Point(0, 0)
+        Me.menuPurchaseOrder.Name = "menuPurchaseOrder"
+        Me.menuPurchaseOrder.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.menuPurchaseOrder.Size = New System.Drawing.Size(1232, 33)
+        Me.menuPurchaseOrder.TabIndex = 15
+        Me.menuPurchaseOrder.Text = "MenuStrip1"
         '
-        'AccountUser
+        'inventoryMenuSt
+        '
+        Me.inventoryMenuSt.ForeColor = System.Drawing.Color.SteelBlue
+        Me.inventoryMenuSt.Name = "inventoryMenuSt"
+        Me.inventoryMenuSt.Size = New System.Drawing.Size(219, 29)
+        Me.inventoryMenuSt.Text = "Create Purchase Order"
+        '
+        'AllPurchasesToolStripMenuItem
+        '
+        Me.AllPurchasesToolStripMenuItem.Name = "AllPurchasesToolStripMenuItem"
+        Me.AllPurchasesToolStripMenuItem.Size = New System.Drawing.Size(140, 29)
+        Me.AllPurchasesToolStripMenuItem.Text = "All Purchases"
+        '
+        'PurchaseOrderCreate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -538,11 +501,12 @@ Partial Class AccountUser
         Me.Controls.Add(Me.leftSideBar)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.MaintenancePanel)
+        Me.MainMenuStrip = Me.menuPurchaseOrder
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "AccountUser"
+        Me.Name = "PurchaseOrderCreate"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Maintenance (EMPLOYEE)"
+        Me.Text = " Maintenance (Inventory)"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -551,7 +515,10 @@ Partial Class AccountUser
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.menuPurchaseOrder.ResumeLayout(False)
+        Me.menuPurchaseOrder.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -560,7 +527,6 @@ Partial Class AccountUser
     Friend WithEvents Panel2 As Panel
     Friend WithEvents OrderBtn As Button
     Friend WithEvents PurBtn As Button
-    Friend WithEvents AccBtn As Button
     Friend WithEvents MainBtn As Button
     Friend WithEvents PayBtn As Button
     Friend WithEvents MenuBarBtn As Button
@@ -577,19 +543,16 @@ Partial Class AccountUser
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents lbTableNum As Label
-    Friend WithEvents txtbTableNum As TextBox
     Friend WithEvents SaveBtn As Button
+    Friend WithEvents DeleteBtn As Button
+    Friend WithEvents menuPurchaseOrder As MenuStrip
+    Friend WithEvents inventoryMenuSt As ToolStripMenuItem
     Friend WithEvents CloseBtn As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents AccBtn As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents AllPurchasesToolStripMenuItem As ToolStripMenuItem
 End Class

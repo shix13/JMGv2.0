@@ -55,4 +55,12 @@
     Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
 
     End Sub
+
+    Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
+
+    End Sub
+
+    Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles CloseBtn.Click
+
+    End Sub
 End Class
