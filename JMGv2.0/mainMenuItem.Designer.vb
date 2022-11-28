@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class mainSup
+Partial Class mainMenuItem
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -59,14 +59,19 @@ Partial Class mainSup
         Me.supplierMainSt = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuMainSt = New System.Windows.Forms.ToolStripMenuItem()
         Me.inventoryMenuSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.searchSup = New System.Windows.Forms.TextBox()
-        Me.dgvSupplier = New System.Windows.Forms.DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
         Me.menuMaintenance.SuspendLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -365,7 +370,12 @@ Partial Class mainSup
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MaintenancePanel.Controls.Add(Me.searchSup)
+        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
+        Me.MaintenancePanel.Controls.Add(Me.Button1)
+        Me.MaintenancePanel.Controls.Add(Me.Button2)
+        Me.MaintenancePanel.Controls.Add(Me.Label1)
+        Me.MaintenancePanel.Controls.Add(Me.DataGridView2)
+        Me.MaintenancePanel.Controls.Add(Me.DataGridView1)
         Me.MaintenancePanel.Controls.Add(Me.lblContactNo)
         Me.MaintenancePanel.Controls.Add(Me.txtbContactNo)
         Me.MaintenancePanel.Controls.Add(Me.lblSupName)
@@ -373,7 +383,6 @@ Partial Class mainSup
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
         Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
-        Me.MaintenancePanel.Controls.Add(Me.dgvSupplier)
         Me.MaintenancePanel.Controls.Add(Me.lblSupID)
         Me.MaintenancePanel.Controls.Add(Me.txtbSupID)
         Me.MaintenancePanel.Controls.Add(Me.menuMaintenance)
@@ -389,15 +398,15 @@ Partial Class mainSup
         Me.lblContactNo.AutoSize = True
         Me.lblContactNo.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblContactNo.ForeColor = System.Drawing.Color.White
-        Me.lblContactNo.Location = New System.Drawing.Point(92, 343)
+        Me.lblContactNo.Location = New System.Drawing.Point(842, 61)
         Me.lblContactNo.Name = "lblContactNo"
-        Me.lblContactNo.Size = New System.Drawing.Size(199, 27)
+        Me.lblContactNo.Size = New System.Drawing.Size(68, 27)
         Me.lblContactNo.TabIndex = 20
-        Me.lblContactNo.Text = "Contact Number"
+        Me.lblContactNo.Text = "Price"
         '
         'txtbContactNo
         '
-        Me.txtbContactNo.Location = New System.Drawing.Point(92, 374)
+        Me.txtbContactNo.Location = New System.Drawing.Point(842, 92)
         Me.txtbContactNo.Name = "txtbContactNo"
         Me.txtbContactNo.Size = New System.Drawing.Size(306, 27)
         Me.txtbContactNo.TabIndex = 19
@@ -407,15 +416,15 @@ Partial Class mainSup
         Me.lblSupName.AutoSize = True
         Me.lblSupName.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblSupName.ForeColor = System.Drawing.Color.White
-        Me.lblSupName.Location = New System.Drawing.Point(92, 230)
+        Me.lblSupName.Location = New System.Drawing.Point(467, 61)
         Me.lblSupName.Name = "lblSupName"
-        Me.lblSupName.Size = New System.Drawing.Size(177, 27)
+        Me.lblSupName.Size = New System.Drawing.Size(207, 27)
         Me.lblSupName.TabIndex = 18
-        Me.lblSupName.Text = "Supplier Name"
+        Me.lblSupName.Text = "Menu Item Name"
         '
         'txtbSupName
         '
-        Me.txtbSupName.Location = New System.Drawing.Point(92, 261)
+        Me.txtbSupName.Location = New System.Drawing.Point(467, 92)
         Me.txtbSupName.Name = "txtbSupName"
         Me.txtbSupName.Size = New System.Drawing.Size(306, 27)
         Me.txtbSupName.TabIndex = 17
@@ -425,7 +434,7 @@ Partial Class mainSup
         Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.CloseBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.CloseBtn.Location = New System.Drawing.Point(1031, 642)
+        Me.CloseBtn.Location = New System.Drawing.Point(1083, 657)
         Me.CloseBtn.Name = "CloseBtn"
         Me.CloseBtn.Size = New System.Drawing.Size(99, 37)
         Me.CloseBtn.TabIndex = 16
@@ -437,7 +446,7 @@ Partial Class mainSup
         Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.SaveBtn.Location = New System.Drawing.Point(92, 583)
+        Me.SaveBtn.Location = New System.Drawing.Point(45, 657)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(103, 37)
         Me.SaveBtn.TabIndex = 13
@@ -449,7 +458,7 @@ Partial Class mainSup
         Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.DeleteBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.DeleteBtn.Location = New System.Drawing.Point(201, 583)
+        Me.DeleteBtn.Location = New System.Drawing.Point(154, 657)
         Me.DeleteBtn.Name = "DeleteBtn"
         Me.DeleteBtn.Size = New System.Drawing.Size(99, 37)
         Me.DeleteBtn.TabIndex = 11
@@ -461,15 +470,15 @@ Partial Class mainSup
         Me.lblSupID.AutoSize = True
         Me.lblSupID.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblSupID.ForeColor = System.Drawing.Color.White
-        Me.lblSupID.Location = New System.Drawing.Point(92, 125)
+        Me.lblSupID.Location = New System.Drawing.Point(81, 61)
         Me.lblSupID.Name = "lblSupID"
-        Me.lblSupID.Size = New System.Drawing.Size(130, 27)
+        Me.lblSupID.Size = New System.Drawing.Size(172, 27)
         Me.lblSupID.TabIndex = 5
-        Me.lblSupID.Text = "Supplier ID"
+        Me.lblSupID.Text = "Menu Number"
         '
         'txtbSupID
         '
-        Me.txtbSupID.Location = New System.Drawing.Point(92, 156)
+        Me.txtbSupID.Location = New System.Drawing.Point(81, 92)
         Me.txtbSupID.Name = "txtbSupID"
         Me.txtbSupID.Size = New System.Drawing.Size(306, 27)
         Me.txtbSupID.TabIndex = 0
@@ -517,25 +526,70 @@ Partial Class mainSup
         Me.inventoryMenuSt.Size = New System.Drawing.Size(109, 29)
         Me.inventoryMenuSt.Text = "Inventory"
         '
-        'searchSup
+        'DataGridView1
         '
-        Me.searchSup.Location = New System.Drawing.Point(824, 87)
-        Me.searchSup.Name = "searchSup"
-        Me.searchSup.Size = New System.Drawing.Size(306, 27)
-        Me.searchSup.TabIndex = 27
-        Me.searchSup.Text = "Search Supplier"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(45, 195)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 29
+        Me.DataGridView1.Size = New System.Drawing.Size(526, 447)
+        Me.DataGridView1.TabIndex = 21
         '
-        'dgvSupplier
+        'DataGridView2
         '
-        Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSupplier.Location = New System.Drawing.Point(521, 122)
-        Me.dgvSupplier.Name = "dgvSupplier"
-        Me.dgvSupplier.RowHeadersWidth = 51
-        Me.dgvSupplier.RowTemplate.Height = 29
-        Me.dgvSupplier.Size = New System.Drawing.Size(609, 498)
-        Me.dgvSupplier.TabIndex = 7
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(625, 195)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 29
+        Me.DataGridView2.Size = New System.Drawing.Size(557, 447)
+        Me.DataGridView2.TabIndex = 22
         '
-        'mainSup
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(45, 162)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(225, 27)
+        Me.Label1.TabIndex = 23
+        Me.Label1.Text = "Item Ingredient List"
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(903, 151)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(158, 37)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "All Ingredients"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(1067, 151)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(115, 37)
+        Me.Button2.TabIndex = 24
+        Me.Button2.Text = "All Items"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(625, 163)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(198, 27)
+        Me.TextBox1.TabIndex = 26
+        Me.TextBox1.Text = "Search"
+        '
+        'mainMenuItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -549,9 +603,9 @@ Partial Class mainSup
         Me.MainMenuStrip = Me.menuMaintenance
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "mainSup"
+        Me.Name = "mainMenuItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Maintenance (SUPPLIER)"
+        Me.Text = "Maintenance (MENU)"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -562,7 +616,8 @@ Partial Class mainSup
         Me.MaintenancePanel.PerformLayout()
         Me.menuMaintenance.ResumeLayout(False)
         Me.menuMaintenance.PerformLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -603,6 +658,10 @@ Partial Class mainSup
     Friend WithEvents txtbContactNo As TextBox
     Friend WithEvents lblSupName As Label
     Friend WithEvents txtbSupName As TextBox
-    Friend WithEvents searchSup As TextBox
-    Friend WithEvents dgvSupplier As DataGridView
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TextBox1 As TextBox
 End Class
