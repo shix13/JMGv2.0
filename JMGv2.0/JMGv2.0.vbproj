@@ -37,6 +37,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Update="mainTable.vb" />
     <Compile Update="Pay.vb">
       <SubType>Form</SubType>
     </Compile>
