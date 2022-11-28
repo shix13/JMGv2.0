@@ -44,17 +44,17 @@ Partial Class Pay
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.SaveBtn = New System.Windows.Forms.Button()
+        Me.lblOrderNo = New System.Windows.Forms.Label()
+        Me.txtbOrderNo = New System.Windows.Forms.TextBox()
+        Me.ConfirmBtn = New System.Windows.Forms.Button()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.dgvPayment = New System.Windows.Forms.DataGridView()
-        Me.lblOrderNum = New System.Windows.Forms.Label()
-        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblReceiptNo = New System.Windows.Forms.Label()
+        Me.lblAmountPay = New System.Windows.Forms.Label()
         Me.lblTableNum = New System.Windows.Forms.Label()
-        Me.txtbTotal = New System.Windows.Forms.TextBox()
+        Me.txtbAmountPay = New System.Windows.Forms.TextBox()
         Me.cmbTableNum = New System.Windows.Forms.ComboBox()
-        Me.txtbOrdNum = New System.Windows.Forms.TextBox()
+        Me.txtbReceiptNo = New System.Windows.Forms.TextBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -358,17 +358,17 @@ Partial Class Pay
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Controls.Add(Me.TextBox1)
-        Me.Panel3.Controls.Add(Me.SaveBtn)
+        Me.Panel3.Controls.Add(Me.lblOrderNo)
+        Me.Panel3.Controls.Add(Me.txtbOrderNo)
+        Me.Panel3.Controls.Add(Me.ConfirmBtn)
         Me.Panel3.Controls.Add(Me.CloseBtn)
         Me.Panel3.Controls.Add(Me.dgvPayment)
-        Me.Panel3.Controls.Add(Me.lblOrderNum)
-        Me.Panel3.Controls.Add(Me.lblTotal)
+        Me.Panel3.Controls.Add(Me.lblReceiptNo)
+        Me.Panel3.Controls.Add(Me.lblAmountPay)
         Me.Panel3.Controls.Add(Me.lblTableNum)
-        Me.Panel3.Controls.Add(Me.txtbTotal)
+        Me.Panel3.Controls.Add(Me.txtbAmountPay)
         Me.Panel3.Controls.Add(Me.cmbTableNum)
-        Me.Panel3.Controls.Add(Me.txtbOrdNum)
+        Me.Panel3.Controls.Add(Me.txtbReceiptNo)
         Me.Panel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(54, 120)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
@@ -376,35 +376,35 @@ Partial Class Pay
         Me.Panel3.Size = New System.Drawing.Size(1232, 739)
         Me.Panel3.TabIndex = 2
         '
-        'Label1
+        'lblOrderNo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(127, 302)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 27)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Order Number"
+        Me.lblOrderNo.AutoSize = True
+        Me.lblOrderNo.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblOrderNo.ForeColor = System.Drawing.Color.White
+        Me.lblOrderNo.Location = New System.Drawing.Point(127, 302)
+        Me.lblOrderNo.Name = "lblOrderNo"
+        Me.lblOrderNo.Size = New System.Drawing.Size(171, 27)
+        Me.lblOrderNo.TabIndex = 3
+        Me.lblOrderNo.Text = "Order Number"
         '
-        'TextBox1
+        'txtbOrderNo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(127, 333)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox1.TabIndex = 14
+        Me.txtbOrderNo.Location = New System.Drawing.Point(127, 333)
+        Me.txtbOrderNo.Name = "txtbOrderNo"
+        Me.txtbOrderNo.Size = New System.Drawing.Size(306, 27)
+        Me.txtbOrderNo.TabIndex = 14
         '
-        'SaveBtn
+        'ConfirmBtn
         '
-        Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.SaveBtn.Location = New System.Drawing.Point(127, 537)
-        Me.SaveBtn.Name = "SaveBtn"
-        Me.SaveBtn.Size = New System.Drawing.Size(178, 37)
-        Me.SaveBtn.TabIndex = 13
-        Me.SaveBtn.Text = "Confirm Payment"
-        Me.SaveBtn.UseVisualStyleBackColor = True
+        Me.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.ConfirmBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ConfirmBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.ConfirmBtn.Location = New System.Drawing.Point(127, 537)
+        Me.ConfirmBtn.Name = "ConfirmBtn"
+        Me.ConfirmBtn.Size = New System.Drawing.Size(178, 37)
+        Me.ConfirmBtn.TabIndex = 13
+        Me.ConfirmBtn.Text = "Confirm Payment"
+        Me.ConfirmBtn.UseVisualStyleBackColor = True
         '
         'CloseBtn
         '
@@ -428,27 +428,27 @@ Partial Class Pay
         Me.dgvPayment.Size = New System.Drawing.Size(609, 592)
         Me.dgvPayment.TabIndex = 7
         '
-        'lblOrderNum
+        'lblReceiptNo
         '
-        Me.lblOrderNum.AutoSize = True
-        Me.lblOrderNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblOrderNum.ForeColor = System.Drawing.Color.White
-        Me.lblOrderNum.Location = New System.Drawing.Point(127, 104)
-        Me.lblOrderNum.Name = "lblOrderNum"
-        Me.lblOrderNum.Size = New System.Drawing.Size(194, 27)
-        Me.lblOrderNum.TabIndex = 5
-        Me.lblOrderNum.Text = "Receipt Number"
+        Me.lblReceiptNo.AutoSize = True
+        Me.lblReceiptNo.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblReceiptNo.ForeColor = System.Drawing.Color.White
+        Me.lblReceiptNo.Location = New System.Drawing.Point(127, 104)
+        Me.lblReceiptNo.Name = "lblReceiptNo"
+        Me.lblReceiptNo.Size = New System.Drawing.Size(194, 27)
+        Me.lblReceiptNo.TabIndex = 5
+        Me.lblReceiptNo.Text = "Receipt Number"
         '
-        'lblTotal
+        'lblAmountPay
         '
-        Me.lblTotal.AutoSize = True
-        Me.lblTotal.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblTotal.ForeColor = System.Drawing.Color.White
-        Me.lblTotal.Location = New System.Drawing.Point(127, 402)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(178, 27)
-        Me.lblTotal.TabIndex = 4
-        Me.lblTotal.Text = "Amount to pay"
+        Me.lblAmountPay.AutoSize = True
+        Me.lblAmountPay.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblAmountPay.ForeColor = System.Drawing.Color.White
+        Me.lblAmountPay.Location = New System.Drawing.Point(127, 402)
+        Me.lblAmountPay.Name = "lblAmountPay"
+        Me.lblAmountPay.Size = New System.Drawing.Size(178, 27)
+        Me.lblAmountPay.TabIndex = 4
+        Me.lblAmountPay.Text = "Amount to pay"
         '
         'lblTableNum
         '
@@ -461,12 +461,12 @@ Partial Class Pay
         Me.lblTableNum.TabIndex = 3
         Me.lblTableNum.Text = "Table Number"
         '
-        'txtbTotal
+        'txtbAmountPay
         '
-        Me.txtbTotal.Location = New System.Drawing.Point(127, 433)
-        Me.txtbTotal.Name = "txtbTotal"
-        Me.txtbTotal.Size = New System.Drawing.Size(306, 27)
-        Me.txtbTotal.TabIndex = 2
+        Me.txtbAmountPay.Location = New System.Drawing.Point(127, 433)
+        Me.txtbAmountPay.Name = "txtbAmountPay"
+        Me.txtbAmountPay.Size = New System.Drawing.Size(306, 27)
+        Me.txtbAmountPay.TabIndex = 2
         '
         'cmbTableNum
         '
@@ -476,12 +476,12 @@ Partial Class Pay
         Me.cmbTableNum.Size = New System.Drawing.Size(306, 28)
         Me.cmbTableNum.TabIndex = 1
         '
-        'txtbOrdNum
+        'txtbReceiptNo
         '
-        Me.txtbOrdNum.Location = New System.Drawing.Point(127, 135)
-        Me.txtbOrdNum.Name = "txtbOrdNum"
-        Me.txtbOrdNum.Size = New System.Drawing.Size(306, 27)
-        Me.txtbOrdNum.TabIndex = 0
+        Me.txtbReceiptNo.Location = New System.Drawing.Point(127, 135)
+        Me.txtbReceiptNo.Name = "txtbReceiptNo"
+        Me.txtbReceiptNo.Size = New System.Drawing.Size(306, 27)
+        Me.txtbReceiptNo.TabIndex = 0
         '
         'Pay
         '
@@ -533,15 +533,15 @@ Partial Class Pay
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents lblOrderNum As Label
-    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblReceiptNo As Label
+    Friend WithEvents lblAmountPay As Label
     Friend WithEvents lblTableNum As Label
-    Friend WithEvents txtbTotal As TextBox
+    Friend WithEvents txtbAmountPay As TextBox
     Friend WithEvents cmbTableNum As ComboBox
-    Friend WithEvents txtbOrdNum As TextBox
+    Friend WithEvents txtbReceiptNo As TextBox
     Friend WithEvents dgvPayment As DataGridView
-    Friend WithEvents SaveBtn As Button
+    Friend WithEvents ConfirmBtn As Button
     Friend WithEvents CloseBtn As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents lblOrderNo As Label
+    Friend WithEvents txtbOrderNo As TextBox
 End Class

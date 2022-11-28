@@ -44,19 +44,19 @@ Partial Class mainInventory
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.searchSup = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lblUnit = New System.Windows.Forms.Label()
+        Me.cmbUnit = New System.Windows.Forms.ComboBox()
+        Me.searchIngredient = New System.Windows.Forms.TextBox()
+        Me.lblQty = New System.Windows.Forms.Label()
+        Me.txtbQty = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtbIngName = New System.Windows.Forms.TextBox()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
-        Me.dgvSupplier = New System.Windows.Forms.DataGridView()
-        Me.lblSupID = New System.Windows.Forms.Label()
-        Me.txtbSupID = New System.Windows.Forms.TextBox()
+        Me.dgvIngredients = New System.Windows.Forms.DataGridView()
+        Me.lblIngID = New System.Windows.Forms.Label()
+        Me.txtbIngID = New System.Windows.Forms.TextBox()
         Me.menuMaintenance = New System.Windows.Forms.MenuStrip()
         Me.tableMainSt = New System.Windows.Forms.ToolStripMenuItem()
         Me.employeeMainSt = New System.Windows.Forms.ToolStripMenuItem()
@@ -67,7 +67,7 @@ Partial Class mainInventory
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvIngredients, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuMaintenance.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -367,19 +367,19 @@ Partial Class mainInventory
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MaintenancePanel.Controls.Add(Me.Label5)
-        Me.MaintenancePanel.Controls.Add(Me.ComboBox1)
-        Me.MaintenancePanel.Controls.Add(Me.searchSup)
-        Me.MaintenancePanel.Controls.Add(Me.Label3)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox2)
+        Me.MaintenancePanel.Controls.Add(Me.lblUnit)
+        Me.MaintenancePanel.Controls.Add(Me.cmbUnit)
+        Me.MaintenancePanel.Controls.Add(Me.searchIngredient)
+        Me.MaintenancePanel.Controls.Add(Me.lblQty)
+        Me.MaintenancePanel.Controls.Add(Me.txtbQty)
         Me.MaintenancePanel.Controls.Add(Me.Label2)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
+        Me.MaintenancePanel.Controls.Add(Me.txtbIngName)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
         Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
-        Me.MaintenancePanel.Controls.Add(Me.dgvSupplier)
-        Me.MaintenancePanel.Controls.Add(Me.lblSupID)
-        Me.MaintenancePanel.Controls.Add(Me.txtbSupID)
+        Me.MaintenancePanel.Controls.Add(Me.dgvIngredients)
+        Me.MaintenancePanel.Controls.Add(Me.lblIngID)
+        Me.MaintenancePanel.Controls.Add(Me.txtbIngID)
         Me.MaintenancePanel.Controls.Add(Me.menuMaintenance)
         Me.MaintenancePanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MaintenancePanel.Location = New System.Drawing.Point(54, 120)
@@ -388,51 +388,51 @@ Partial Class mainInventory
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
         '
-        'Label5
+        'lblUnit
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(92, 408)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 27)
-        Me.Label5.TabIndex = 29
-        Me.Label5.Text = "Unit"
+        Me.lblUnit.AutoSize = True
+        Me.lblUnit.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblUnit.ForeColor = System.Drawing.Color.White
+        Me.lblUnit.Location = New System.Drawing.Point(92, 408)
+        Me.lblUnit.Name = "lblUnit"
+        Me.lblUnit.Size = New System.Drawing.Size(54, 27)
+        Me.lblUnit.TabIndex = 29
+        Me.lblUnit.Text = "Unit"
         '
-        'ComboBox1
+        'cmbUnit
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(92, 437)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(306, 28)
-        Me.ComboBox1.TabIndex = 28
-        Me.ComboBox1.Text = "Select"
+        Me.cmbUnit.FormattingEnabled = True
+        Me.cmbUnit.Location = New System.Drawing.Point(92, 437)
+        Me.cmbUnit.Name = "cmbUnit"
+        Me.cmbUnit.Size = New System.Drawing.Size(306, 28)
+        Me.cmbUnit.TabIndex = 28
+        Me.cmbUnit.Text = "Select"
         '
-        'searchSup
+        'searchIngredient
         '
-        Me.searchSup.Location = New System.Drawing.Point(824, 87)
-        Me.searchSup.Name = "searchSup"
-        Me.searchSup.Size = New System.Drawing.Size(306, 27)
-        Me.searchSup.TabIndex = 27
-        Me.searchSup.Text = "Search Ingredient"
+        Me.searchIngredient.Location = New System.Drawing.Point(824, 87)
+        Me.searchIngredient.Name = "searchIngredient"
+        Me.searchIngredient.Size = New System.Drawing.Size(306, 27)
+        Me.searchIngredient.TabIndex = 27
+        Me.searchIngredient.Text = "Search Ingredient"
         '
-        'Label3
+        'lblQty
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(92, 312)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(201, 27)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Quantity in Stock"
+        Me.lblQty.AutoSize = True
+        Me.lblQty.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblQty.ForeColor = System.Drawing.Color.White
+        Me.lblQty.Location = New System.Drawing.Point(92, 312)
+        Me.lblQty.Name = "lblQty"
+        Me.lblQty.Size = New System.Drawing.Size(201, 27)
+        Me.lblQty.TabIndex = 20
+        Me.lblQty.Text = "Quantity in Stock"
         '
-        'TextBox2
+        'txtbQty
         '
-        Me.TextBox2.Location = New System.Drawing.Point(92, 343)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox2.TabIndex = 19
+        Me.txtbQty.Location = New System.Drawing.Point(92, 343)
+        Me.txtbQty.Name = "txtbQty"
+        Me.txtbQty.Size = New System.Drawing.Size(306, 27)
+        Me.txtbQty.TabIndex = 19
         '
         'Label2
         '
@@ -445,12 +445,12 @@ Partial Class mainInventory
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "Ingredient Name"
         '
-        'TextBox1
+        'txtbIngName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 250)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox1.TabIndex = 17
+        Me.txtbIngName.Location = New System.Drawing.Point(92, 250)
+        Me.txtbIngName.Name = "txtbIngName"
+        Me.txtbIngName.Size = New System.Drawing.Size(306, 27)
+        Me.txtbIngName.TabIndex = 17
         '
         'CloseBtn
         '
@@ -488,33 +488,33 @@ Partial Class mainInventory
         Me.DeleteBtn.Text = "Delete"
         Me.DeleteBtn.UseVisualStyleBackColor = True
         '
-        'dgvSupplier
+        'dgvIngredients
         '
-        Me.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSupplier.Location = New System.Drawing.Point(521, 129)
-        Me.dgvSupplier.Name = "dgvSupplier"
-        Me.dgvSupplier.RowHeadersWidth = 51
-        Me.dgvSupplier.RowTemplate.Height = 29
-        Me.dgvSupplier.Size = New System.Drawing.Size(609, 498)
-        Me.dgvSupplier.TabIndex = 7
+        Me.dgvIngredients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvIngredients.Location = New System.Drawing.Point(521, 129)
+        Me.dgvIngredients.Name = "dgvIngredients"
+        Me.dgvIngredients.RowHeadersWidth = 51
+        Me.dgvIngredients.RowTemplate.Height = 29
+        Me.dgvIngredients.Size = New System.Drawing.Size(609, 498)
+        Me.dgvIngredients.TabIndex = 7
         '
-        'lblSupID
+        'lblIngID
         '
-        Me.lblSupID.AutoSize = True
-        Me.lblSupID.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSupID.ForeColor = System.Drawing.Color.White
-        Me.lblSupID.Location = New System.Drawing.Point(92, 125)
-        Me.lblSupID.Name = "lblSupID"
-        Me.lblSupID.Size = New System.Drawing.Size(154, 27)
-        Me.lblSupID.TabIndex = 5
-        Me.lblSupID.Text = "Ingredient ID"
+        Me.lblIngID.AutoSize = True
+        Me.lblIngID.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblIngID.ForeColor = System.Drawing.Color.White
+        Me.lblIngID.Location = New System.Drawing.Point(92, 125)
+        Me.lblIngID.Name = "lblIngID"
+        Me.lblIngID.Size = New System.Drawing.Size(154, 27)
+        Me.lblIngID.TabIndex = 5
+        Me.lblIngID.Text = "Ingredient ID"
         '
-        'txtbSupID
+        'txtbIngID
         '
-        Me.txtbSupID.Location = New System.Drawing.Point(92, 156)
-        Me.txtbSupID.Name = "txtbSupID"
-        Me.txtbSupID.Size = New System.Drawing.Size(306, 27)
-        Me.txtbSupID.TabIndex = 0
+        Me.txtbIngID.Location = New System.Drawing.Point(92, 156)
+        Me.txtbIngID.Name = "txtbIngID"
+        Me.txtbIngID.Size = New System.Drawing.Size(306, 27)
+        Me.txtbIngID.TabIndex = 0
         '
         'menuMaintenance
         '
@@ -585,7 +585,7 @@ Partial Class mainInventory
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.dgvSupplier, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvIngredients, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuMaintenance.ResumeLayout(False)
         Me.menuMaintenance.PerformLayout()
         Me.ResumeLayout(False)
@@ -613,8 +613,8 @@ Partial Class mainInventory
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents lblSupID As Label
-    Friend WithEvents txtbSupID As TextBox
+    Friend WithEvents lblIngID As Label
+    Friend WithEvents txtbIngID As TextBox
     Friend WithEvents SaveBtn As Button
     Friend WithEvents DeleteBtn As Button
     Friend WithEvents menuMaintenance As MenuStrip
@@ -624,12 +624,12 @@ Partial Class mainInventory
     Friend WithEvents menuMainSt As ToolStripMenuItem
     Friend WithEvents inventoryMenuSt As ToolStripMenuItem
     Friend WithEvents CloseBtn As Button
-    Friend WithEvents searchSup As TextBox
-    Friend WithEvents dgvSupplier As DataGridView
-    Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents searchIngredient As TextBox
+    Friend WithEvents dgvIngredients As DataGridView
+    Friend WithEvents lblUnit As Label
+    Friend WithEvents cmbUnit As ComboBox
+    Friend WithEvents lblQty As Label
+    Friend WithEvents txtbQty As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtbIngName As TextBox
 End Class

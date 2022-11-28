@@ -44,23 +44,23 @@ Partial Class PurchaseOrderCreate
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.searchIngSup = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvIngSup = New System.Windows.Forms.DataGridView()
+        Me.dgvCreatePO = New System.Windows.Forms.DataGridView()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
         Me.menuPurchaseOrder = New System.Windows.Forms.MenuStrip()
-        Me.inventoryMenuSt = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AllPurchasesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuCreatePO = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuAllPO = New System.Windows.Forms.ToolStripMenuItem()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvIngSup, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCreatePO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuPurchaseOrder.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -360,11 +360,11 @@ Partial Class PurchaseOrderCreate
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
+        Me.MaintenancePanel.Controls.Add(Me.searchIngSup)
         Me.MaintenancePanel.Controls.Add(Me.Button2)
         Me.MaintenancePanel.Controls.Add(Me.Button1)
-        Me.MaintenancePanel.Controls.Add(Me.DataGridView2)
-        Me.MaintenancePanel.Controls.Add(Me.DataGridView1)
+        Me.MaintenancePanel.Controls.Add(Me.dgvIngSup)
+        Me.MaintenancePanel.Controls.Add(Me.dgvCreatePO)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
         Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
@@ -376,13 +376,13 @@ Partial Class PurchaseOrderCreate
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
         '
-        'TextBox1
+        'searchIngSup
         '
-        Me.TextBox1.Location = New System.Drawing.Point(580, 411)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(256, 27)
-        Me.TextBox1.TabIndex = 21
-        Me.TextBox1.Text = "Search"
+        Me.searchIngSup.Location = New System.Drawing.Point(580, 411)
+        Me.searchIngSup.Name = "searchIngSup"
+        Me.searchIngSup.Size = New System.Drawing.Size(256, 27)
+        Me.searchIngSup.TabIndex = 21
+        Me.searchIngSup.Text = "Search"
         '
         'Button2
         '
@@ -408,25 +408,25 @@ Partial Class PurchaseOrderCreate
         Me.Button1.Text = "Ingredients"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'DataGridView2
+        'dgvIngSup
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(51, 447)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.RowTemplate.Height = 29
-        Me.DataGridView2.Size = New System.Drawing.Size(785, 245)
-        Me.DataGridView2.TabIndex = 18
+        Me.dgvIngSup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvIngSup.Location = New System.Drawing.Point(51, 447)
+        Me.dgvIngSup.Name = "dgvIngSup"
+        Me.dgvIngSup.RowHeadersWidth = 51
+        Me.dgvIngSup.RowTemplate.Height = 29
+        Me.dgvIngSup.Size = New System.Drawing.Size(785, 245)
+        Me.dgvIngSup.TabIndex = 18
         '
-        'DataGridView1
+        'dgvCreatePO
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(51, 78)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1127, 282)
-        Me.DataGridView1.TabIndex = 17
+        Me.dgvCreatePO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCreatePO.Location = New System.Drawing.Point(51, 78)
+        Me.dgvCreatePO.Name = "dgvCreatePO"
+        Me.dgvCreatePO.RowHeadersWidth = 51
+        Me.dgvCreatePO.RowTemplate.Height = 29
+        Me.dgvCreatePO.Size = New System.Drawing.Size(1127, 282)
+        Me.dgvCreatePO.TabIndex = 17
         '
         'CloseBtn
         '
@@ -469,7 +469,7 @@ Partial Class PurchaseOrderCreate
         Me.menuPurchaseOrder.Font = New System.Drawing.Font("Malgun Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.menuPurchaseOrder.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
         Me.menuPurchaseOrder.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.menuPurchaseOrder.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.inventoryMenuSt, Me.AllPurchasesToolStripMenuItem})
+        Me.menuPurchaseOrder.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuCreatePO, Me.menuAllPO})
         Me.menuPurchaseOrder.Location = New System.Drawing.Point(0, 0)
         Me.menuPurchaseOrder.Name = "menuPurchaseOrder"
         Me.menuPurchaseOrder.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -477,18 +477,18 @@ Partial Class PurchaseOrderCreate
         Me.menuPurchaseOrder.TabIndex = 15
         Me.menuPurchaseOrder.Text = "MenuStrip1"
         '
-        'inventoryMenuSt
+        'menuCreatePO
         '
-        Me.inventoryMenuSt.ForeColor = System.Drawing.Color.SteelBlue
-        Me.inventoryMenuSt.Name = "inventoryMenuSt"
-        Me.inventoryMenuSt.Size = New System.Drawing.Size(219, 29)
-        Me.inventoryMenuSt.Text = "Create Purchase Order"
+        Me.menuCreatePO.ForeColor = System.Drawing.Color.SteelBlue
+        Me.menuCreatePO.Name = "menuCreatePO"
+        Me.menuCreatePO.Size = New System.Drawing.Size(219, 29)
+        Me.menuCreatePO.Text = "Create Purchase Order"
         '
-        'AllPurchasesToolStripMenuItem
+        'menuAllPO
         '
-        Me.AllPurchasesToolStripMenuItem.Name = "AllPurchasesToolStripMenuItem"
-        Me.AllPurchasesToolStripMenuItem.Size = New System.Drawing.Size(140, 29)
-        Me.AllPurchasesToolStripMenuItem.Text = "All Purchases"
+        Me.menuAllPO.Name = "menuAllPO"
+        Me.menuAllPO.Size = New System.Drawing.Size(140, 29)
+        Me.menuAllPO.Text = "All Purchases"
         '
         'PurchaseOrderCreate
         '
@@ -515,8 +515,8 @@ Partial Class PurchaseOrderCreate
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvIngSup, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCreatePO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuPurchaseOrder.ResumeLayout(False)
         Me.menuPurchaseOrder.PerformLayout()
         Me.ResumeLayout(False)
@@ -546,13 +546,13 @@ Partial Class PurchaseOrderCreate
     Friend WithEvents SaveBtn As Button
     Friend WithEvents DeleteBtn As Button
     Friend WithEvents menuPurchaseOrder As MenuStrip
-    Friend WithEvents inventoryMenuSt As ToolStripMenuItem
+    Friend WithEvents menuCreatePO As ToolStripMenuItem
     Friend WithEvents CloseBtn As Button
     Friend WithEvents AccBtn As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents searchIngSup As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents AllPurchasesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents dgvIngSup As DataGridView
+    Friend WithEvents dgvCreatePO As DataGridView
+    Friend WithEvents menuAllPO As ToolStripMenuItem
 End Class

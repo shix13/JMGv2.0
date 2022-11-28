@@ -26,9 +26,9 @@ Partial Class Login
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtAccID = New System.Windows.Forms.TextBox()
         Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.LoginBtn = New System.Windows.Forms.Button()
+        Me.lblSignUp = New System.Windows.Forms.Label()
+        Me.linkSignUp = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,44 +74,44 @@ Partial Class Login
         Me.txtPass.Size = New System.Drawing.Size(277, 27)
         Me.txtPass.TabIndex = 6
         '
-        'Button2
+        'LoginBtn
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ForeColor = System.Drawing.Color.Snow
-        Me.Button2.Location = New System.Drawing.Point(376, 527)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 39)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "Login"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.LoginBtn.BackColor = System.Drawing.Color.Transparent
+        Me.LoginBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.LoginBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LoginBtn.ForeColor = System.Drawing.Color.Snow
+        Me.LoginBtn.Location = New System.Drawing.Point(376, 527)
+        Me.LoginBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.LoginBtn.Name = "LoginBtn"
+        Me.LoginBtn.Size = New System.Drawing.Size(111, 39)
+        Me.LoginBtn.TabIndex = 13
+        Me.LoginBtn.Text = "Login"
+        Me.LoginBtn.UseVisualStyleBackColor = False
         '
-        'Label1
+        'lblSignUp
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(354, 606)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(157, 23)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Create an account?"
+        Me.lblSignUp.AutoSize = True
+        Me.lblSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblSignUp.Font = New System.Drawing.Font("Segoe UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblSignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblSignUp.Location = New System.Drawing.Point(354, 606)
+        Me.lblSignUp.Name = "lblSignUp"
+        Me.lblSignUp.Size = New System.Drawing.Size(157, 23)
+        Me.lblSignUp.TabIndex = 15
+        Me.lblSignUp.Text = "Create an account?"
         '
-        'LinkLabel1
+        'linkSignUp
         '
-        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.Red
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel1.Location = New System.Drawing.Point(400, 637)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(61, 20)
-        Me.LinkLabel1.TabIndex = 16
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Sign Up"
+        Me.linkSignUp.ActiveLinkColor = System.Drawing.Color.Red
+        Me.linkSignUp.AutoSize = True
+        Me.linkSignUp.LinkColor = System.Drawing.Color.Yellow
+        Me.linkSignUp.Location = New System.Drawing.Point(400, 637)
+        Me.linkSignUp.Name = "linkSignUp"
+        Me.linkSignUp.Size = New System.Drawing.Size(61, 20)
+        Me.linkSignUp.TabIndex = 16
+        Me.linkSignUp.TabStop = True
+        Me.linkSignUp.Text = "Sign Up"
         '
         'Login
         '
@@ -121,10 +121,10 @@ Partial Class Login
         Me.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(882, 853)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.linkSignUp)
+        Me.Controls.Add(Me.lblSignUp)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.LoginBtn)
         Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.txtAccID)
         Me.Controls.Add(Me.PictureBox2)
@@ -150,8 +150,8 @@ Partial Class Login
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtAccID As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LoginBtn As Button
+    Friend WithEvents lblSignUp As Label
+    Friend WithEvents linkSignUp As LinkLabel
     Protected Friend WithEvents txtPass As TextBox
 End Class

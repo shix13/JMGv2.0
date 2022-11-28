@@ -92,7 +92,7 @@
 
     End Sub
 
-    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
+    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblAmountPay.Click
 
     End Sub
 

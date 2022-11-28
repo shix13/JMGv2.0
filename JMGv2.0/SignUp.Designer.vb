@@ -24,17 +24,17 @@ Partial Class SignUp
     Private Sub InitializeComponent()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblLName = New System.Windows.Forms.Label()
+        Me.txtbLName = New System.Windows.Forms.TextBox()
+        Me.txtbFName = New System.Windows.Forms.TextBox()
+        Me.lblFName = New System.Windows.Forms.Label()
+        Me.txtbMName = New System.Windows.Forms.TextBox()
+        Me.lblMName = New System.Windows.Forms.Label()
+        Me.lblPosition = New System.Windows.Forms.Label()
+        Me.txtbPassword = New System.Windows.Forms.TextBox()
+        Me.lblPassword = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbPosition = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,97 +60,97 @@ Partial Class SignUp
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "CREATE NEW ACCOUNT"
         '
-        'Label2
+        'lblLName
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(305, 233)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 29)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Last name"
+        Me.lblLName.AutoSize = True
+        Me.lblLName.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblLName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblLName.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblLName.Location = New System.Drawing.Point(305, 233)
+        Me.lblLName.Name = "lblLName"
+        Me.lblLName.Size = New System.Drawing.Size(123, 29)
+        Me.lblLName.TabIndex = 3
+        Me.lblLName.Text = "Last name"
         '
-        'TextBox1
+        'txtbLName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(305, 265)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox1.TabIndex = 4
+        Me.txtbLName.Location = New System.Drawing.Point(305, 265)
+        Me.txtbLName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtbLName.Name = "txtbLName"
+        Me.txtbLName.Size = New System.Drawing.Size(277, 27)
+        Me.txtbLName.TabIndex = 4
         '
-        'TextBox2
+        'txtbFName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(305, 343)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox2.TabIndex = 6
+        Me.txtbFName.Location = New System.Drawing.Point(305, 343)
+        Me.txtbFName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtbFName.Name = "txtbFName"
+        Me.txtbFName.Size = New System.Drawing.Size(277, 27)
+        Me.txtbFName.TabIndex = 6
         '
-        'Label3
+        'lblFName
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label3.Location = New System.Drawing.Point(305, 310)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(126, 29)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "First name"
+        Me.lblFName.AutoSize = True
+        Me.lblFName.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblFName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblFName.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblFName.Location = New System.Drawing.Point(305, 310)
+        Me.lblFName.Name = "lblFName"
+        Me.lblFName.Size = New System.Drawing.Size(126, 29)
+        Me.lblFName.TabIndex = 5
+        Me.lblFName.Text = "First name"
         '
-        'TextBox3
+        'txtbMName
         '
-        Me.TextBox3.Location = New System.Drawing.Point(305, 423)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox3.TabIndex = 8
+        Me.txtbMName.Location = New System.Drawing.Point(305, 423)
+        Me.txtbMName.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtbMName.Name = "txtbMName"
+        Me.txtbMName.Size = New System.Drawing.Size(277, 27)
+        Me.txtbMName.TabIndex = 8
         '
-        'Label4
+        'lblMName
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label4.Location = New System.Drawing.Point(305, 391)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(153, 29)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Middle name"
+        Me.lblMName.AutoSize = True
+        Me.lblMName.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblMName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblMName.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblMName.Location = New System.Drawing.Point(305, 391)
+        Me.lblMName.Name = "lblMName"
+        Me.lblMName.Size = New System.Drawing.Size(153, 29)
+        Me.lblMName.TabIndex = 7
+        Me.lblMName.Text = "Middle name"
         '
-        'Label5
+        'lblPosition
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label5.Location = New System.Drawing.Point(305, 471)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(100, 29)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Position"
+        Me.lblPosition.AutoSize = True
+        Me.lblPosition.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblPosition.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblPosition.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPosition.Location = New System.Drawing.Point(305, 471)
+        Me.lblPosition.Name = "lblPosition"
+        Me.lblPosition.Size = New System.Drawing.Size(100, 29)
+        Me.lblPosition.TabIndex = 9
+        Me.lblPosition.Text = "Position"
         '
-        'TextBox5
+        'txtbPassword
         '
-        Me.TextBox5.Location = New System.Drawing.Point(305, 587)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox5.TabIndex = 12
+        Me.txtbPassword.Location = New System.Drawing.Point(305, 587)
+        Me.txtbPassword.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtbPassword.Name = "txtbPassword"
+        Me.txtbPassword.Size = New System.Drawing.Size(277, 27)
+        Me.txtbPassword.TabIndex = 12
         '
-        'Label6
+        'lblPassword
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label6.Location = New System.Drawing.Point(305, 554)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(120, 29)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Password"
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblPassword.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPassword.Location = New System.Drawing.Point(305, 554)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(120, 29)
+        Me.lblPassword.TabIndex = 11
+        Me.lblPassword.Text = "Password"
         '
         'Button1
         '
@@ -167,15 +167,15 @@ Partial Class SignUp
         Me.Button1.Text = "SIGN UP"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'ComboBox1
+        'cmbPosition
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(305, 503)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(277, 28)
-        Me.ComboBox1.TabIndex = 14
-        Me.ComboBox1.Text = "Select"
+        Me.cmbPosition.FormattingEnabled = True
+        Me.cmbPosition.Location = New System.Drawing.Point(305, 503)
+        Me.cmbPosition.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.cmbPosition.Name = "cmbPosition"
+        Me.cmbPosition.Size = New System.Drawing.Size(277, 28)
+        Me.cmbPosition.TabIndex = 14
+        Me.cmbPosition.Text = "Select"
         '
         'SignUp
         '
@@ -185,17 +185,17 @@ Partial Class SignUp
         Me.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(882, 853)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbPosition)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtbPassword)
+        Me.Controls.Add(Me.lblPassword)
+        Me.Controls.Add(Me.lblPosition)
+        Me.Controls.Add(Me.txtbMName)
+        Me.Controls.Add(Me.lblMName)
+        Me.Controls.Add(Me.txtbFName)
+        Me.Controls.Add(Me.lblFName)
+        Me.Controls.Add(Me.txtbLName)
+        Me.Controls.Add(Me.lblLName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.MaximizeBox = False
@@ -211,22 +211,22 @@ Partial Class SignUp
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents CreateLabel As Label
     Friend WithEvents Lname As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblLName As Label
+    Friend WithEvents lblFName As Label
     Friend WithEvents Fname As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblMName As Label
     Friend WithEvents Mname As TextBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblPosition As Label
     Friend WithEvents position As TextBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblPassword As Label
     Friend WithEvents password As TextBox
     Friend WithEvents SignUpBtn As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtbLName As TextBox
+    Friend WithEvents txtbFName As TextBox
+    Friend WithEvents txtbMName As TextBox
+    Friend WithEvents txtbPassword As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbPosition As ComboBox
 End Class

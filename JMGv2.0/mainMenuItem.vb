@@ -100,11 +100,11 @@
 
     End Sub
 
-    Private Sub lblSupName_Click(sender As Object, e As EventArgs) Handles lblSupName.Click
+    Private Sub lblSupName_Click(sender As Object, e As EventArgs) Handles lblMenuName.Click
 
     End Sub
 
-    Private Sub txtbSupName_TextChanged(sender As Object, e As EventArgs) Handles txtbSupName.TextChanged
+    Private Sub txtbSupName_TextChanged(sender As Object, e As EventArgs) Handles txtbMenuName.TextChanged
 
     End Sub
 End Class

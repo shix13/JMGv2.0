@@ -21,7 +21,7 @@
 
 
     Private Sub AccountUser_Load(sender As Object, e As EventArgs)
-        TextBox5.PasswordChar = "*"
+        txtbPassword.PasswordChar = "*"
     End Sub
 
 
@@ -52,7 +52,7 @@
 
     End Sub
 
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles txtbPassword.TextChanged
 
     End Sub
 

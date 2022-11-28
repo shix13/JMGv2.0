@@ -44,26 +44,26 @@ Partial Class AccountUser
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.accLogo = New System.Windows.Forms.PictureBox()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.txtbPassword = New System.Windows.Forms.TextBox()
+        Me.lblPosition = New System.Windows.Forms.Label()
+        Me.txtbPosition = New System.Windows.Forms.TextBox()
+        Me.lblMName = New System.Windows.Forms.Label()
+        Me.txtMName = New System.Windows.Forms.TextBox()
+        Me.lblFName = New System.Windows.Forms.Label()
+        Me.txtbFName = New System.Windows.Forms.TextBox()
+        Me.lblLName = New System.Windows.Forms.Label()
+        Me.txtbLName = New System.Windows.Forms.TextBox()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
-        Me.lbTableNum = New System.Windows.Forms.Label()
-        Me.txtbTableNum = New System.Windows.Forms.TextBox()
+        Me.lblAccID = New System.Windows.Forms.Label()
+        Me.txtbAccID = New System.Windows.Forms.TextBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.accLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -362,21 +362,21 @@ Partial Class AccountUser
         '
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MaintenancePanel.Controls.Add(Me.PictureBox1)
-        Me.MaintenancePanel.Controls.Add(Me.Label6)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox5)
-        Me.MaintenancePanel.Controls.Add(Me.Label5)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox4)
-        Me.MaintenancePanel.Controls.Add(Me.Label3)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox3)
-        Me.MaintenancePanel.Controls.Add(Me.Label2)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox2)
-        Me.MaintenancePanel.Controls.Add(Me.Label1)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
+        Me.MaintenancePanel.Controls.Add(Me.accLogo)
+        Me.MaintenancePanel.Controls.Add(Me.lblPassword)
+        Me.MaintenancePanel.Controls.Add(Me.txtbPassword)
+        Me.MaintenancePanel.Controls.Add(Me.lblPosition)
+        Me.MaintenancePanel.Controls.Add(Me.txtbPosition)
+        Me.MaintenancePanel.Controls.Add(Me.lblMName)
+        Me.MaintenancePanel.Controls.Add(Me.txtMName)
+        Me.MaintenancePanel.Controls.Add(Me.lblFName)
+        Me.MaintenancePanel.Controls.Add(Me.txtbFName)
+        Me.MaintenancePanel.Controls.Add(Me.lblLName)
+        Me.MaintenancePanel.Controls.Add(Me.txtbLName)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
-        Me.MaintenancePanel.Controls.Add(Me.lbTableNum)
-        Me.MaintenancePanel.Controls.Add(Me.txtbTableNum)
+        Me.MaintenancePanel.Controls.Add(Me.lblAccID)
+        Me.MaintenancePanel.Controls.Add(Me.txtbAccID)
         Me.MaintenancePanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.MaintenancePanel.Location = New System.Drawing.Point(54, 120)
         Me.MaintenancePanel.Margin = New System.Windows.Forms.Padding(0)
@@ -384,106 +384,106 @@ Partial Class AccountUser
         Me.MaintenancePanel.Size = New System.Drawing.Size(1232, 739)
         Me.MaintenancePanel.TabIndex = 2
         '
-        'PictureBox1
+        'accLogo
         '
-        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(81, 67)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(589, 578)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 27
-        Me.PictureBox1.TabStop = False
+        Me.accLogo.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
+        Me.accLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.accLogo.Location = New System.Drawing.Point(81, 67)
+        Me.accLogo.Name = "accLogo"
+        Me.accLogo.Size = New System.Drawing.Size(589, 578)
+        Me.accLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.accLogo.TabIndex = 27
+        Me.accLogo.TabStop = False
         '
-        'Label6
+        'lblPassword
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(802, 518)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(115, 27)
-        Me.Label6.TabIndex = 26
-        Me.Label6.Text = "Password"
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblPassword.ForeColor = System.Drawing.Color.White
+        Me.lblPassword.Location = New System.Drawing.Point(802, 518)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(115, 27)
+        Me.lblPassword.TabIndex = 26
+        Me.lblPassword.Text = "Password"
         '
-        'TextBox5
+        'txtbPassword
         '
-        Me.TextBox5.Location = New System.Drawing.Point(802, 549)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox5.TabIndex = 25
+        Me.txtbPassword.Location = New System.Drawing.Point(802, 549)
+        Me.txtbPassword.Name = "txtbPassword"
+        Me.txtbPassword.Size = New System.Drawing.Size(306, 27)
+        Me.txtbPassword.TabIndex = 25
         '
-        'Label5
+        'lblPosition
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(802, 430)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(98, 27)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Position"
+        Me.lblPosition.AutoSize = True
+        Me.lblPosition.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblPosition.ForeColor = System.Drawing.Color.White
+        Me.lblPosition.Location = New System.Drawing.Point(802, 430)
+        Me.lblPosition.Name = "lblPosition"
+        Me.lblPosition.Size = New System.Drawing.Size(98, 27)
+        Me.lblPosition.TabIndex = 24
+        Me.lblPosition.Text = "Position"
         '
-        'TextBox4
+        'txtbPosition
         '
-        Me.TextBox4.Location = New System.Drawing.Point(802, 461)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox4.TabIndex = 23
+        Me.txtbPosition.Location = New System.Drawing.Point(802, 461)
+        Me.txtbPosition.Name = "txtbPosition"
+        Me.txtbPosition.Size = New System.Drawing.Size(306, 27)
+        Me.txtbPosition.TabIndex = 23
         '
-        'Label3
+        'lblMName
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(802, 341)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(162, 27)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Middle name"
+        Me.lblMName.AutoSize = True
+        Me.lblMName.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblMName.ForeColor = System.Drawing.Color.White
+        Me.lblMName.Location = New System.Drawing.Point(802, 341)
+        Me.lblMName.Name = "lblMName"
+        Me.lblMName.Size = New System.Drawing.Size(162, 27)
+        Me.lblMName.TabIndex = 22
+        Me.lblMName.Text = "Middle name"
         '
-        'TextBox3
+        'txtMName
         '
-        Me.TextBox3.Location = New System.Drawing.Point(802, 372)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox3.TabIndex = 21
+        Me.txtMName.Location = New System.Drawing.Point(802, 372)
+        Me.txtMName.Name = "txtMName"
+        Me.txtMName.Size = New System.Drawing.Size(306, 27)
+        Me.txtMName.TabIndex = 21
         '
-        'Label2
+        'lblFName
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(802, 251)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(125, 27)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "First name"
+        Me.lblFName.AutoSize = True
+        Me.lblFName.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblFName.ForeColor = System.Drawing.Color.White
+        Me.lblFName.Location = New System.Drawing.Point(802, 251)
+        Me.lblFName.Name = "lblFName"
+        Me.lblFName.Size = New System.Drawing.Size(125, 27)
+        Me.lblFName.TabIndex = 20
+        Me.lblFName.Text = "First name"
         '
-        'TextBox2
+        'txtbFName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(802, 282)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox2.TabIndex = 19
+        Me.txtbFName.Location = New System.Drawing.Point(802, 282)
+        Me.txtbFName.Name = "txtbFName"
+        Me.txtbFName.Size = New System.Drawing.Size(306, 27)
+        Me.txtbFName.TabIndex = 19
         '
-        'Label1
+        'lblLName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(802, 166)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(126, 27)
-        Me.Label1.TabIndex = 18
-        Me.Label1.Text = "Last name"
+        Me.lblLName.AutoSize = True
+        Me.lblLName.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblLName.ForeColor = System.Drawing.Color.White
+        Me.lblLName.Location = New System.Drawing.Point(802, 166)
+        Me.lblLName.Name = "lblLName"
+        Me.lblLName.Size = New System.Drawing.Size(126, 27)
+        Me.lblLName.TabIndex = 18
+        Me.lblLName.Text = "Last name"
         '
-        'TextBox1
+        'txtbLName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(802, 197)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
-        Me.TextBox1.TabIndex = 17
+        Me.txtbLName.Location = New System.Drawing.Point(802, 197)
+        Me.txtbLName.Name = "txtbLName"
+        Me.txtbLName.Size = New System.Drawing.Size(306, 27)
+        Me.txtbLName.TabIndex = 17
         '
         'CloseBtn
         '
@@ -509,23 +509,23 @@ Partial Class AccountUser
         Me.SaveBtn.Text = "Save"
         Me.SaveBtn.UseVisualStyleBackColor = True
         '
-        'lbTableNum
+        'lblAccID
         '
-        Me.lbTableNum.AutoSize = True
-        Me.lbTableNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbTableNum.ForeColor = System.Drawing.Color.White
-        Me.lbTableNum.Location = New System.Drawing.Point(802, 82)
-        Me.lbTableNum.Name = "lbTableNum"
-        Me.lbTableNum.Size = New System.Drawing.Size(137, 27)
-        Me.lbTableNum.TabIndex = 5
-        Me.lbTableNum.Text = "Account ID"
+        Me.lblAccID.AutoSize = True
+        Me.lblAccID.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblAccID.ForeColor = System.Drawing.Color.White
+        Me.lblAccID.Location = New System.Drawing.Point(802, 82)
+        Me.lblAccID.Name = "lblAccID"
+        Me.lblAccID.Size = New System.Drawing.Size(137, 27)
+        Me.lblAccID.TabIndex = 5
+        Me.lblAccID.Text = "Account ID"
         '
-        'txtbTableNum
+        'txtbAccID
         '
-        Me.txtbTableNum.Location = New System.Drawing.Point(802, 113)
-        Me.txtbTableNum.Name = "txtbTableNum"
-        Me.txtbTableNum.Size = New System.Drawing.Size(306, 27)
-        Me.txtbTableNum.TabIndex = 0
+        Me.txtbAccID.Location = New System.Drawing.Point(802, 113)
+        Me.txtbAccID.Name = "txtbAccID"
+        Me.txtbAccID.Size = New System.Drawing.Size(306, 27)
+        Me.txtbAccID.TabIndex = 0
         '
         'AccountUser
         '
@@ -551,7 +551,7 @@ Partial Class AccountUser
         Me.Panel2.PerformLayout()
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.accLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -577,19 +577,19 @@ Partial Class AccountUser
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents lbTableNum As Label
-    Friend WithEvents txtbTableNum As TextBox
+    Friend WithEvents lblAccID As Label
+    Friend WithEvents txtbAccID As TextBox
     Friend WithEvents SaveBtn As Button
     Friend WithEvents CloseBtn As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents txtbPassword As TextBox
+    Friend WithEvents lblPosition As Label
+    Friend WithEvents txtbPosition As TextBox
+    Friend WithEvents lblMName As Label
+    Friend WithEvents txtMName As TextBox
+    Friend WithEvents lblFName As Label
+    Friend WithEvents txtbFName As TextBox
+    Friend WithEvents lblLName As Label
+    Friend WithEvents txtbLName As TextBox
+    Friend WithEvents accLogo As PictureBox
 End Class

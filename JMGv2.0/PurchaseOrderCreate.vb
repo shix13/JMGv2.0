@@ -112,7 +112,7 @@ Public Class PurchaseOrderCreate
 
     End Sub
 
-    Private Sub inventoryMenuSt_Click(sender As Object, e As EventArgs) Handles inventoryMenuSt.Click
+    Private Sub inventoryMenuSt_Click(sender As Object, e As EventArgs) Handles menuCreatePO.Click
 
     End Sub
 

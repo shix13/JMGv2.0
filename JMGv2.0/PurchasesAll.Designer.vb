@@ -45,8 +45,8 @@ Partial Class PurchaseAll
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MaintenancePanel = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.searchAllPur = New System.Windows.Forms.TextBox()
+        Me.dgvAllPurchases = New System.Windows.Forms.DataGridView()
         Me.CloseBtn = New System.Windows.Forms.Button()
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.DeleteBtn = New System.Windows.Forms.Button()
@@ -58,7 +58,7 @@ Partial Class PurchaseAll
         Me.Panel2.SuspendLayout()
         Me.MaintenancePanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvAllPurchases, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuPurchaseOrder.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -359,8 +359,8 @@ Partial Class PurchaseAll
         Me.MaintenancePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.MaintenancePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.MaintenancePanel.Controls.Add(Me.PictureBox1)
-        Me.MaintenancePanel.Controls.Add(Me.TextBox1)
-        Me.MaintenancePanel.Controls.Add(Me.DataGridView1)
+        Me.MaintenancePanel.Controls.Add(Me.searchAllPur)
+        Me.MaintenancePanel.Controls.Add(Me.dgvAllPurchases)
         Me.MaintenancePanel.Controls.Add(Me.CloseBtn)
         Me.MaintenancePanel.Controls.Add(Me.SaveBtn)
         Me.MaintenancePanel.Controls.Add(Me.DeleteBtn)
@@ -382,23 +382,23 @@ Partial Class PurchaseAll
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
-        'TextBox1
+        'searchAllPur
         '
-        Me.TextBox1.Location = New System.Drawing.Point(865, 134)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(313, 27)
-        Me.TextBox1.TabIndex = 21
-        Me.TextBox1.Text = "Search"
+        Me.searchAllPur.Location = New System.Drawing.Point(865, 134)
+        Me.searchAllPur.Name = "searchAllPur"
+        Me.searchAllPur.Size = New System.Drawing.Size(313, 27)
+        Me.searchAllPur.TabIndex = 21
+        Me.searchAllPur.Text = "Search"
         '
-        'DataGridView1
+        'dgvAllPurchases
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(51, 180)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(1127, 455)
-        Me.DataGridView1.TabIndex = 17
+        Me.dgvAllPurchases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAllPurchases.Location = New System.Drawing.Point(51, 180)
+        Me.dgvAllPurchases.Name = "dgvAllPurchases"
+        Me.dgvAllPurchases.RowHeadersWidth = 51
+        Me.dgvAllPurchases.RowTemplate.Height = 29
+        Me.dgvAllPurchases.Size = New System.Drawing.Size(1127, 455)
+        Me.dgvAllPurchases.TabIndex = 17
         '
         'CloseBtn
         '
@@ -489,7 +489,7 @@ Partial Class PurchaseAll
         Me.MaintenancePanel.ResumeLayout(False)
         Me.MaintenancePanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAllPurchases, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuPurchaseOrder.ResumeLayout(False)
         Me.menuPurchaseOrder.PerformLayout()
         Me.ResumeLayout(False)
@@ -522,8 +522,8 @@ Partial Class PurchaseAll
     Friend WithEvents inventoryMenuSt As ToolStripMenuItem
     Friend WithEvents CloseBtn As Button
     Friend WithEvents AccBtn As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents searchAllPur As TextBox
+    Friend WithEvents dgvAllPurchases As DataGridView
     Friend WithEvents AllPurchasesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
 End Class
