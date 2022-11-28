@@ -26,6 +26,7 @@ Public Class Login
         Try
             Conn = New DB2Connection("server=localhost;database=oneg;" + "uid=db2admin;password=db2admin;")
             Conn.Open()
+
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

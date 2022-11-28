@@ -24,8 +24,8 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtAccID = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -55,23 +55,24 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
+        'txtAccID
         '
-        Me.TextBox3.Location = New System.Drawing.Point(298, 415)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox3.TabIndex = 4
-        Me.TextBox3.Text = "Account ID"
+        Me.txtAccID.Location = New System.Drawing.Point(298, 415)
+        Me.txtAccID.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtAccID.Name = "txtAccID"
+        Me.txtAccID.PlaceholderText = "Account ID"
+        Me.txtAccID.Size = New System.Drawing.Size(277, 27)
+        Me.txtAccID.TabIndex = 4
         '
-        'TextBox4
+        'txtPass
         '
-        Me.TextBox4.Location = New System.Drawing.Point(298, 466)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(277, 27)
-        Me.TextBox4.TabIndex = 6
-        Me.TextBox4.Text = "Password"
+        Me.txtPass.Location = New System.Drawing.Point(298, 466)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.PlaceholderText = "Password"
+        Me.txtPass.Size = New System.Drawing.Size(277, 27)
+        Me.txtPass.TabIndex = 6
         '
         'Button2
         '
@@ -124,8 +125,8 @@ Partial Class Login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtPass)
+        Me.Controls.Add(Me.txtAccID)
         Me.Controls.Add(Me.PictureBox2)
         Me.MaximizeBox = False
         Me.Name = "Login"
@@ -148,9 +149,9 @@ Partial Class Login
     Friend WithEvents SignUpBtn As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtAccID As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Protected Friend WithEvents txtPass As TextBox
 End Class
