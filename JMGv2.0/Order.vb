@@ -1,9 +1,8 @@
-﻿Public Class Form4
+﻿Public Class Order
     Dim sidebar As String = "Close"
 
     Sub clear()
-        lblWelcome.Visible = False
-        dtpPanelDate.Visible = False
+        lblPanelWelcome.Visible = False
         OrderBtn.Visible = False
         PayBtn.Visible = False
         MainBtn.Visible = False
@@ -12,8 +11,7 @@
     End Sub
 
     Sub setname()
-        lblWelcome.Visible = True
-        dtpPanelDate.Visible = True
+        lblPanelWelcome.Visible = True
         OrderBtn.Visible = True
         PayBtn.Visible = True
         MainBtn.Visible = True
@@ -31,21 +29,21 @@
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles MenuBar.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles MenuBarBtn.Click
         Timer1.Start()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If sidebar = "Open" Then
-            leftSideBar.Width -= 41
-            If leftSideBar.Width <= 50 Then
+            leftSideBar.Width -= 60
+            If leftSideBar.Width <= 60 Then
                 clear()
                 sidebar = "Close"
                 Timer1.Stop()
             End If
         Else
-            leftSideBar.Width += 41
-            If leftSideBar.Width >= 214 Then
+            leftSideBar.Width += 60
+            If leftSideBar.Width >= 200 Then
                 setname()
                 sidebar = "Open"
                 Timer1.Stop()
@@ -66,15 +64,11 @@
 
     End Sub
 
-    Private Sub HomeBtn_Click(sender As Object, e As EventArgs)
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles OrderIconBtn.Click
 
     End Sub
 
-    Private Sub TableNo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbTableNo.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label_Click(sender As Object, e As EventArgs) Handles lblTableNo.Click
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 
@@ -82,7 +76,20 @@
 
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lblSearchV.Click
+    Private Sub MainBtn_Click(sender As Object, e As EventArgs) Handles MainBtn.Click
 
     End Sub
+
+    Private Sub PayBtn_Click(sender As Object, e As EventArgs) Handles PayBtn.Click
+
+    End Sub
+
+    Private Sub WelcomePanel_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblPanelWelcome.Click
+
+    End Sub
+
 End Class

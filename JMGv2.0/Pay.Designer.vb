@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form3
+Partial Class Pay
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,14 +41,25 @@ Partial Class Form3
         Me.lblPanelMenuBar = New System.Windows.Forms.Label()
         Me.MenuBarBtn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.SaveBtn = New System.Windows.Forms.Button()
+        Me.CloseBtn = New System.Windows.Forms.Button()
+        Me.dgvPayment = New System.Windows.Forms.DataGridView()
+        Me.lblOrderNum = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblTableNum = New System.Windows.Forms.Label()
+        Me.txtbTotal = New System.Windows.Forms.TextBox()
+        Me.cmbTableNum = New System.Windows.Forms.ComboBox()
+        Me.txtbOrdNum = New System.Windows.Forms.TextBox()
         Me.leftSideBar.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPayment, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'leftSideBar
@@ -147,16 +158,16 @@ Partial Class Form3
         '
         'PayIconBtn
         '
-        Me.PayIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.PayIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.PayIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.PngItem_877239
         Me.PayIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PayIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PayIconBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.PayIconBtn.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.PayIconBtn.Location = New System.Drawing.Point(6, 303)
+        Me.PayIconBtn.Location = New System.Drawing.Point(6, 309)
         Me.PayIconBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PayIconBtn.Name = "PayIconBtn"
-        Me.PayIconBtn.Size = New System.Drawing.Size(49, 71)
+        Me.PayIconBtn.Size = New System.Drawing.Size(49, 65)
         Me.PayIconBtn.TabIndex = 15
         Me.PayIconBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.PayIconBtn.UseVisualStyleBackColor = False
@@ -175,7 +186,7 @@ Partial Class Form3
         '
         'OrderIconBtn
         '
-        Me.OrderIconBtn.BackColor = System.Drawing.Color.Transparent
+        Me.OrderIconBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.OrderIconBtn.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.pinpng_com_checklist_icon_png_2009984
         Me.OrderIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.OrderIconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -242,14 +253,14 @@ Partial Class Form3
         '
         'PayBtn
         '
-        Me.PayBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.PayBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.PayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PayBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.PayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PayBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.PayBtn.ForeColor = System.Drawing.Color.White
         Me.PayBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.PayBtn.Location = New System.Drawing.Point(56, 309)
+        Me.PayBtn.Location = New System.Drawing.Point(54, 309)
         Me.PayBtn.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PayBtn.Name = "PayBtn"
         Me.PayBtn.Size = New System.Drawing.Size(200, 65)
@@ -318,12 +329,26 @@ Partial Class Form3
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.Background_1
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1286, 120)
         Me.Panel2.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(414, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(537, 74)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "CREATE PAYMENT"
         '
         'Timer1
         '
@@ -333,40 +358,132 @@ Partial Class Form3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(106, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(124, Byte), Integer))
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.ForeColor = System.Drawing.Color.Crimson
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Controls.Add(Me.TextBox1)
+        Me.Panel3.Controls.Add(Me.SaveBtn)
+        Me.Panel3.Controls.Add(Me.CloseBtn)
+        Me.Panel3.Controls.Add(Me.dgvPayment)
+        Me.Panel3.Controls.Add(Me.lblOrderNum)
+        Me.Panel3.Controls.Add(Me.lblTotal)
+        Me.Panel3.Controls.Add(Me.lblTableNum)
+        Me.Panel3.Controls.Add(Me.txtbTotal)
+        Me.Panel3.Controls.Add(Me.cmbTableNum)
+        Me.Panel3.Controls.Add(Me.txtbOrdNum)
+        Me.Panel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(54, 120)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1232, 739)
         Me.Panel3.TabIndex = 2
         '
-        'PictureBox1
+        'Label1
         '
-        Me.PictureBox1.BackgroundImage = Global.JMGv2._0.My.Resources.Resources.logo
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(418, 145)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(400, 467)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(127, 302)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(171, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Order Number"
         '
-        'Label2
+        'TextBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Myanmar Text", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(283, 25)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(758, 142)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "WELCOME, ADMIN!"
+        Me.TextBox1.Location = New System.Drawing.Point(127, 333)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(306, 27)
+        Me.TextBox1.TabIndex = 14
         '
-        'Form3
+        'SaveBtn
+        '
+        Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.SaveBtn.Location = New System.Drawing.Point(127, 537)
+        Me.SaveBtn.Name = "SaveBtn"
+        Me.SaveBtn.Size = New System.Drawing.Size(178, 37)
+        Me.SaveBtn.TabIndex = 13
+        Me.SaveBtn.Text = "Confirm Payment"
+        Me.SaveBtn.UseVisualStyleBackColor = True
+        '
+        'CloseBtn
+        '
+        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.CloseBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.CloseBtn.Location = New System.Drawing.Point(334, 537)
+        Me.CloseBtn.Name = "CloseBtn"
+        Me.CloseBtn.Size = New System.Drawing.Size(99, 37)
+        Me.CloseBtn.TabIndex = 11
+        Me.CloseBtn.Text = "Close"
+        Me.CloseBtn.UseVisualStyleBackColor = True
+        '
+        'dgvPayment
+        '
+        Me.dgvPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPayment.Location = New System.Drawing.Point(521, 71)
+        Me.dgvPayment.Name = "dgvPayment"
+        Me.dgvPayment.RowHeadersWidth = 51
+        Me.dgvPayment.RowTemplate.Height = 29
+        Me.dgvPayment.Size = New System.Drawing.Size(609, 592)
+        Me.dgvPayment.TabIndex = 7
+        '
+        'lblOrderNum
+        '
+        Me.lblOrderNum.AutoSize = True
+        Me.lblOrderNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblOrderNum.ForeColor = System.Drawing.Color.White
+        Me.lblOrderNum.Location = New System.Drawing.Point(127, 104)
+        Me.lblOrderNum.Name = "lblOrderNum"
+        Me.lblOrderNum.Size = New System.Drawing.Size(194, 27)
+        Me.lblOrderNum.TabIndex = 5
+        Me.lblOrderNum.Text = "Receipt Number"
+        '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTotal.ForeColor = System.Drawing.Color.White
+        Me.lblTotal.Location = New System.Drawing.Point(127, 402)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(178, 27)
+        Me.lblTotal.TabIndex = 4
+        Me.lblTotal.Text = "Amount to pay"
+        '
+        'lblTableNum
+        '
+        Me.lblTableNum.AutoSize = True
+        Me.lblTableNum.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblTableNum.ForeColor = System.Drawing.Color.White
+        Me.lblTableNum.Location = New System.Drawing.Point(127, 203)
+        Me.lblTableNum.Name = "lblTableNum"
+        Me.lblTableNum.Size = New System.Drawing.Size(169, 27)
+        Me.lblTableNum.TabIndex = 3
+        Me.lblTableNum.Text = "Table Number"
+        '
+        'txtbTotal
+        '
+        Me.txtbTotal.Location = New System.Drawing.Point(127, 433)
+        Me.txtbTotal.Name = "txtbTotal"
+        Me.txtbTotal.Size = New System.Drawing.Size(306, 27)
+        Me.txtbTotal.TabIndex = 2
+        '
+        'cmbTableNum
+        '
+        Me.cmbTableNum.FormattingEnabled = True
+        Me.cmbTableNum.Location = New System.Drawing.Point(127, 233)
+        Me.cmbTableNum.Name = "cmbTableNum"
+        Me.cmbTableNum.Size = New System.Drawing.Size(306, 28)
+        Me.cmbTableNum.TabIndex = 1
+        '
+        'txtbOrdNum
+        '
+        Me.txtbOrdNum.Location = New System.Drawing.Point(127, 135)
+        Me.txtbOrdNum.Name = "txtbOrdNum"
+        Me.txtbOrdNum.Size = New System.Drawing.Size(306, 27)
+        Me.txtbOrdNum.TabIndex = 0
+        '
+        'Pay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -379,16 +496,18 @@ Partial Class Form3
         Me.Controls.Add(Me.Panel3)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "Form3"
+        Me.Name = "Pay"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "HOME"
+        Me.Text = "ORDER"
         Me.leftSideBar.ResumeLayout(False)
         Me.leftSideBar.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPayment, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -408,11 +527,21 @@ Partial Class Form3
     Friend WithEvents lblPanelMenuBar As Label
     Friend WithEvents logoutBtn As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents lblPanelWelcome As Label
     Friend WithEvents dtpPanelDate As DateTimePicker
     Friend WithEvents MainIconBtn As Button
     Friend WithEvents PurIconBtn As Button
     Friend WithEvents AccIconBtn As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents lblOrderNum As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblTableNum As Label
+    Friend WithEvents txtbTotal As TextBox
+    Friend WithEvents cmbTableNum As ComboBox
+    Friend WithEvents txtbOrdNum As TextBox
+    Friend WithEvents dgvPayment As DataGridView
+    Friend WithEvents SaveBtn As Button
+    Friend WithEvents CloseBtn As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

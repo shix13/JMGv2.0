@@ -1,4 +1,4 @@
-﻿Public Class Form3
+﻿Public Class Pay
     Dim sidebar As String = "Close"
 
     Sub clear()
@@ -60,7 +60,7 @@
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -91,5 +91,10 @@
     Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblPanelWelcome.Click
 
     End Sub
+
+    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
+
+    End Sub
+
 
 End Class

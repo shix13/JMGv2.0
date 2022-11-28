@@ -4,14 +4,7 @@ Public Class form1
     Private Conn As Common.DbConnection
 
     Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            Conn = New DB2Connection("server=localhost;database=oneg;" + "uid=db2admin;password=db2admin;")
-            Conn.Open()
 
-            'AccPass.PasswordChar = "*"
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LabelNewAcc.Click
@@ -26,11 +19,7 @@ Public Class form1
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Logo.Click
-
-    End Sub
-
-    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles Logo.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) 
 
     End Sub
 
