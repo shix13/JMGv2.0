@@ -388,7 +388,7 @@ Partial Class Order
         Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.SaveBtn.Location = New System.Drawing.Point(881, 657)
+        Me.SaveBtn.Location = New System.Drawing.Point(290, 656)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(141, 37)
         Me.SaveBtn.TabIndex = 13
@@ -400,7 +400,7 @@ Partial Class Order
         Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.DeleteBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.DeleteBtn.Location = New System.Drawing.Point(1028, 657)
+        Me.DeleteBtn.Location = New System.Drawing.Point(437, 656)
         Me.DeleteBtn.Name = "DeleteBtn"
         Me.DeleteBtn.Size = New System.Drawing.Size(141, 37)
         Me.DeleteBtn.TabIndex = 12
@@ -412,7 +412,7 @@ Partial Class Order
         Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.CloseBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.CloseBtn.Location = New System.Drawing.Point(59, 657)
+        Me.CloseBtn.Location = New System.Drawing.Point(1079, 656)
         Me.CloseBtn.Name = "CloseBtn"
         Me.CloseBtn.Size = New System.Drawing.Size(99, 37)
         Me.CloseBtn.TabIndex = 11
@@ -421,18 +421,18 @@ Partial Class Order
         '
         'boxSearchMenu
         '
-        Me.boxSearchMenu.Location = New System.Drawing.Point(280, 138)
+        Me.boxSearchMenu.Location = New System.Drawing.Point(872, 137)
         Me.boxSearchMenu.Name = "boxSearchMenu"
+        Me.boxSearchMenu.PlaceholderText = "Search Menu"
         Me.boxSearchMenu.Size = New System.Drawing.Size(306, 27)
         Me.boxSearchMenu.TabIndex = 10
-        Me.boxSearchMenu.Text = "Search Menu"
         '
         'TableOrderBtn
         '
         Me.TableOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.TableOrderBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TableOrderBtn.ForeColor = System.Drawing.Color.White
-        Me.TableOrderBtn.Location = New System.Drawing.Point(899, 130)
+        Me.TableOrderBtn.Location = New System.Drawing.Point(308, 129)
         Me.TableOrderBtn.Name = "TableOrderBtn"
         Me.TableOrderBtn.Size = New System.Drawing.Size(132, 37)
         Me.TableOrderBtn.TabIndex = 9
@@ -444,7 +444,7 @@ Partial Class Order
         Me.AllOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AllOrderBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.AllOrderBtn.ForeColor = System.Drawing.Color.White
-        Me.AllOrderBtn.Location = New System.Drawing.Point(1037, 130)
+        Me.AllOrderBtn.Location = New System.Drawing.Point(446, 129)
         Me.AllOrderBtn.Name = "AllOrderBtn"
         Me.AllOrderBtn.Size = New System.Drawing.Size(132, 37)
         Me.AllOrderBtn.TabIndex = 8
@@ -454,7 +454,7 @@ Partial Class Order
         'dgvOrder
         '
         Me.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvOrder.Location = New System.Drawing.Point(642, 175)
+        Me.dgvOrder.Location = New System.Drawing.Point(51, 174)
         Me.dgvOrder.Name = "dgvOrder"
         Me.dgvOrder.RowHeadersWidth = 51
         Me.dgvOrder.RowTemplate.Height = 29
@@ -464,7 +464,7 @@ Partial Class Order
         'dgvSearchMenu
         '
         Me.dgvSearchMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSearchMenu.Location = New System.Drawing.Point(59, 174)
+        Me.dgvSearchMenu.Location = New System.Drawing.Point(651, 173)
         Me.dgvSearchMenu.Name = "dgvSearchMenu"
         Me.dgvSearchMenu.RowHeadersWidth = 51
         Me.dgvSearchMenu.RowTemplate.Height = 29

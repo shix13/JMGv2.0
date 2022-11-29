@@ -31,11 +31,6 @@ Public Class PurchaseAll
         End Try
     End Sub
 
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OrderBtn.Click
-
-    End Sub
-
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles MenuBarBtn.Click
         Timer1.Start()
     End Sub
@@ -63,60 +58,49 @@ Public Class PurchaseAll
 
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles MaintenancePanel.Paint
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles OrderIconBtn.Click
-
+        Order.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OrderBtn.Click
+        Order.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub leftSideBar_Paint(sender As Object, e As PaintEventArgs) Handles leftSideBar.Paint
-
-    End Sub
-
-    Private Sub MainBtn_Click(sender As Object, e As EventArgs) Handles MainBtn.Click
-
+    Private Sub PayIconBtn_Click(sender As Object, e As EventArgs) Handles PayIconBtn.Click
+        Pay.Show()
+        Me.Hide()
     End Sub
 
     Private Sub PayBtn_Click(sender As Object, e As EventArgs) Handles PayBtn.Click
-
+        Pay.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub WelcomePanel_Paint(sender As Object, e As PaintEventArgs)
-
+    Private Sub MainIconBtn_Click(sender As Object, e As EventArgs) Handles MainIconBtn.Click
+        mainTable.Show()
+        Me.Hide()
     End Sub
 
-
-    Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblPanelWelcome.Click
-
+    Private Sub MainBtn_Click(sender As Object, e As EventArgs) Handles MainBtn.Click
+        mainTable.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub lblTotal_Click(sender As Object, e As EventArgs)
-
+    Private Sub AccIconBtn_Click(sender As Object, e As EventArgs) Handles AccIconBtn.Click
+        AccountUser.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub TableToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
+    Private Sub AccBtn_Click(sender As Object, e As EventArgs) Handles AccBtn.Click
+        AccountUser.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
-
+    Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles CloseBtn.Click
+        Home.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub inventoryMenuSt_Click(sender As Object, e As EventArgs) Handles inventoryMenuSt.Click
-
-    End Sub
-
-    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
-
-    End Sub
 End Class

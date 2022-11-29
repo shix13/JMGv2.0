@@ -19,11 +19,9 @@
         PurBtn.Visible = True
     End Sub
 
-
     Private Sub AccountUser_Load(sender As Object, e As EventArgs)
         txtbPassword.PasswordChar = "*"
     End Sub
-
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles MenuBarBtn.Click
         Timer1.Start()
@@ -51,16 +49,48 @@
     Private Sub AccountUser_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles txtbPassword.TextChanged
-
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles OrderIconBtn.Click
+        Order.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles OrderBtn.Click
+        Order.Show()
+        Me.Hide()
+    End Sub
 
+    Private Sub PayIconBtn_Click(sender As Object, e As EventArgs) Handles PayIconBtn.Click
+        Pay.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub PayBtn_Click(sender As Object, e As EventArgs) Handles PayBtn.Click
+        Pay.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub MainIconBtn_Click(sender As Object, e As EventArgs) Handles MainIconBtn.Click
+        mainTable.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub MainBtn_Click(sender As Object, e As EventArgs) Handles MainBtn.Click
+        mainTable.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub PurIconBtn_Click(sender As Object, e As EventArgs) Handles PurIconBtn.Click
+        PurchaseOrderCreate.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub PurBtn_Click(sender As Object, e As EventArgs) Handles PurBtn.Click
+        PurchaseOrderCreate.Show()
+        Me.Hide()
     End Sub
 
     Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles CloseBtn.Click
-
+        Home.Show()
+        Me.Hide()
     End Sub
 End Class
