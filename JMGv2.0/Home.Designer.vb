@@ -366,7 +366,7 @@ Partial Class Home
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "WELCOME, ADMIN!"
         '
-        'Form3
+        'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -379,7 +379,7 @@ Partial Class Home
         Me.Controls.Add(Me.Panel3)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
-        Me.Name = "Form3"
+        Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "HOME"
         Me.leftSideBar.ResumeLayout(False)
